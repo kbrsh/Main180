@@ -1,0 +1,54 @@
+body{
+	text-align: center;
+font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f215709275aad0e6d8e4e7e642bf1e94');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  font-weight: 100;
+}
+
+h1{
+  color: white;
+  font-weight: 100;
+  font-size:  20vh;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 10vh;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
