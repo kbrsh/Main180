@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+			   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Day Four | Dice">
+    <meta name="author" content="Kabir Shah">
+	<title>DICE!</title>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70792533-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<style>
+	button {
+
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    max-width: 500;
+		background-color: #34495e;
+}
+	 body {
+      text-align: center;
+      background: url("https://images.unsplash.com/photo-1445937888010-cc262f556033?ixlib=rb-0.3.5&q=80&fm=jpg&s=a6f9901f8d3c5e7b7671c0b9f37077d0");
+      background-size: 100%;
+
+		 background-repeat: no-repeat;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100px;
+   height: 100px;
+   margin-top: -50px; /* Half the height */
+   margin-left: -50px; /* Half the width */
+}
+
+</style>
+<script>
+function rollDice(){
+    var die1 = document.getElementById("die1");
+    var die2 = document.getElementById("die2");
+    var status = document.getElementById("status");
+    var d1 = Math.floor(Math.random() * 6) + 1;
+    var d2 = Math.floor(Math.random() * 6) + 1;
+    var diceTotal = d1 + d2;
+    //die1.innerHTML = d1;
+    //die2.innerHTML = d2;
+    status.innerHTML = "You rolled "+diceTotal+".";
+    if(d1 == d2){
+        status.innerHTML += " DOUBLES! You get a free turn!!";
+    }
+}
+</script>
+</head>
+<body>
+<div id="die1" class="dice"></div>
+<div id="die2" class="dice"></div>
+<button class="btn btn-default" onclick="rollDice()">Roll Dice</button>
+<h1 id="status" style="clear:left; color: #ecf0f1; font-family: Century Gothic, sans-serif; font-size: 75px; @media [max-width: 500px;]: font-size: 30px; padding: 30px 0px 0px 0px;"></h1>
+</body>
+</html>
