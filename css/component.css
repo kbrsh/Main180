@@ -63,25 +63,25 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #e74c3c;
+	background: #F06060;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #f39c12;
+	background: #FA987D;
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #2ecc71;
+	background: #72CCA7;
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #3498db;
+	background: #10A296;
 }
 
 .bl-box {
@@ -377,7 +377,7 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #e74c3c;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: ##f39c12;
+	background: #F98262;
 }
 .bl-main > section:nth-child(3).bl-expand {
 	background: #4BBE8E;
