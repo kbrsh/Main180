@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Day Seventy Six | Schedule">
+    <meta name="author" content="Kabir Shah">
+
+		<title>Schedule</title>
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/public/css/schedule.css" />
+		<script src="/public/js/analytics.js"></script>
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyNine/favicon.png"/>
+	</head>
+	<body>
+<div class="container" ng-app="scheduleApp" ng-controller="mainController">
+
+  <div class="page-header text-center">
+    <h1>Schedule Something</h1>
+  </div>
+
+  <p class="text-center">What time would you like to meet?<br><strong class="text-info">Hurry! Someone else might book your time!</strong></p>
+
+  <div class="row times">
+
+    <div class="col-xs-4 text-center" ng-repeat="day in days">
+
+      <h2>{{ day.name }}</h2>
+
+      <div class="time-slot" ng-repeat="slot in day.slots">
+        <input type="checkbox" id="{{ day.name }}-{{ $index }}" ng-model="slot.booked" ng-disabled="slot.booked">
+        <label for="{{ day.name }}-{{ $index }}">{{ slot.time }}<br>
+          <span ng-if="slot.booked">Booked</span>
+          <span ng-if="!slot.booked">Available</span>
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+
+  <p class="text-center">
+    <a href="#" ng-click="reset()" class="btnn btnn-2">Reset</a>
+  </p>
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+		<script src="/public/js/schedule.js"></script>
+	</body>
+</html>
