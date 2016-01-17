@@ -1,0 +1,208 @@
+body {
+  margin: 1em;
+  text-align: center;
+	 /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?crop=entropy&dpr=0.90&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1525');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font: 60px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h1 span img {
+  height: 30px;
+}
+
+#add-message {
+  font: 20px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+label {
+  display: block;
+}
+
+.messages {
+  margin: 0;
+  padding: 0;
+}
+.messages li {
+  list-style: none;
+  padding: 20px;
+}
+
+form {
+  display: table;
+  margin: 40px auto;
+}
+form label {
+  position: relative;
+  display: block;
+}
+form label input {
+  color: black !important;
+  font: 18px Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+form label input::-webkit-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input::-moz-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input:-ms-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input::placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+  font: 18px Helvetica, Arial, sans-serif;
+}
+form label input:focus, form label input.populated {
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
+form label input:focus::-webkit-input-placeholder, form label input.populated::-webkit-input-placeholder {
+  color: transparent;
+}
+form label input:focus::-moz-placeholder, form label input.populated::-moz-placeholder {
+  color: transparent;
+}
+form label input:focus:-ms-input-placeholder, form label input.populated:-ms-input-placeholder {
+  color: transparent;
+}
+form label input:focus::placeholder, form label input.populated::placeholder {
+  color: transparent;
+}
+form label input:focus + span, form label input.populated + span {
+  opacity: 1;
+  top: 10px;
+}
+form label span {
+  color: #35dc9b;
+  font: 13px Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+form input[type="submit"] {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background: #1aaf75;
+  color: #fff;
+  padding: 16px 40px;
+}
+form input[type="submit"]:hover {
+  background: #109f67;
+}
+
+hr {
+  height: 1px;
+  background: white;
+  border: none;
+  outline: none;
+  margin: 3em 3em 5em;
+  position: relative;
+}
+
+hr:before {
+  content: attr(data-symbol);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: black;
+  color: white;
+  padding: 0.5em 3em;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+hr#one {
+  width: 50%;
+  margin: 3em auto;
+}
+
+.btn {
+  border: none;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.btn-1:hover,
+.btn-1:active {
+  color: #0e83cd;
+  background: #fff;
+}
