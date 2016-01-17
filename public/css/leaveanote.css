@@ -158,7 +158,7 @@ hr:before {
   position: absolute;
   top: 0;
   left: 50%;
-  background: black;
+  background: transparent;
   color: white;
   padding: 0.5em 3em;
   -webkit-transform: translate(-50%, -50%);
