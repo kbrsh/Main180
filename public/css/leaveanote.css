@@ -47,6 +47,7 @@ label {
 .messages {
   margin: 0;
   padding: 0;
+  font-family: 'Century Gothic', sans-serif;
 }
 .messages li {
   list-style: none;
