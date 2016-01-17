@@ -51,6 +51,7 @@ label {
 .messages li {
   list-style: none;
   padding: 20px;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 form {
