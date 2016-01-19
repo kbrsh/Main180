@@ -21,7 +21,7 @@
 
 
   <ul class="messages">
-    <li ng-repeat="item in list.slice().reverse() |limitTo:3">
+    <li ng-repeat="item in list.slice().reverse()">
       <h3>{{item.name}}</h3>
       <p>{{item.message}}</p>
       <hr id="one" data-symbol="♛">
