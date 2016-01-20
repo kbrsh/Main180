@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Day Seventy Eight | Leave a Note">
+    <meta name="author" content="Kabir Shah">
+
+		<title>Leave a Note</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/leaveanote.css" />
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyNine/favicon.png"/>
+		<script src="/public/js/analytics.js"></script>
+	</head>
+	<body>
+<div class="container" ng-app="myApp" ng-controller="SampleCtrl">
+
+  <h1>Leave a Note</h1>
+
+
+  <ul class="messages">
+    <li ng-repeat="item in list.slice().reverse() |limitTo:5">
+      <h3>{{item.name}}</h3>
+      <p>{{item.message}}</p>
+      <hr id="one" data-symbol="♛">
+    </li>
+  </ul>
+
+  <h2 id="add-message">Add A Note</h2>
+
+  <form action="#" ng-submit="submit()" name="message-form">
+
+      <label>
+    <input id="name" type="text" placeholder="Name" required>
+    <span>Name</span>
+  </label>
+
+  <label>
+    <input id="message" type="text" placeholder="Message" required>
+    <span>Message</span>
+  </label>
+    <p><button class="btn btn-1">Add Note</button></p>
+
+  </form>
+
+
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+		<script src="/public/js/leaveanote.js"></script>
+	</body>
+</html>

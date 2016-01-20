@@ -1,0 +1,144 @@
+body {
+	 /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1441966055611-30ea468880a2?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  background-color: #222;
+  overflow-y: hidden;
+}
+
+#container {
+  margin: 10vh;
+  text-align: center;
+  color: #fefefe;
+}
+
+#circle {
+  position: relative;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  margin: -13.6em auto;
+  border: 2px solid #fefefe;
+  z-index: 1;
+  transition: all 15s linear;
+}
+#circle:hover{
+   cursor:pointer;
+   cursor:hand;
+}
+.hidden {
+  transition: none !important;
+  visibility: hidden;
+}
+#retry{
+  text-align: center;
+  margin: 2em auto;
+  line-height: 1em;
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #fefefe;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+#retry2{
+    transition: all 0.25s ease;
+}
+#retry2 > p{
+  text-align: center;
+  margin: 3.5em auto;
+  line-height: 1em;
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #fefefe;
+  text-transform: uppercase;
+  background-color: #222;
+  transition: all 0.25s ease;
+}
+#retry2 > h1{
+   text-align: center;
+  margin: -5.75em auto;
+  line-height: 1em;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #fefefe;
+  text-transform: uppercase;
+  background-color: #222;
+}
+#retry2:hover > p{
+  color: #2ecc71;
+  cursor: pointer;
+  cursor: hand;
+}
+#retry:hover{
+	text-decoration: underline;
+    color: #2ecc71;
+  cursor: pointer;
+  cursor: hand;
+}
+#circle2 {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 2px solid #fefefe;
+}
+
+#pointer {
+  height: 1.5em;
+  width: 12px;
+  background-color: #2ecc71;
+  margin: -0.75em auto;
+  border-radius: 4px;
+  z-index: 999;
+  position: relative;
+}
+
+p {
+  margin-top: -3.3em;
+  line-height: 1em;
+  font-size: 3em;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #fefefe;
+}
+p > h4{
+  font-size: 0.5em;
+  margin-top: -0.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #fefefe;
+}
+
+.point {
+  position: relative;
+  z-index: 10;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  margin: -1em auto;
+  border: 4px solid #222;
+  box-shadow: 0 0 0 1pt #2ecc71;
+  animation: pulse 1s ease-in-out infinite;
+}
+@keyframes pulse{
+  0% {   box-shadow: 0 0 0 1pt #2ecc71; }
+  50% {  box-shadow: 0 0 0 2.5pt #2ecc71;}
+}
