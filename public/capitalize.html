@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Study Guide For Egypt!">
+    <meta name="author" content="Kabir Shah">
+
+		<title>Capitalize Text</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/capitalize.css" />
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+		<script src="/public/js/analytics.js"></script>
+<link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyNine/favicon.png"/>
+	</head>
+	<body>
+		<body ng-app="caps">
+<div ng-controller="capsCtrl">
+  <h1>Capitalize Text</h1>
+  <form>
+  <label>
+    <input type="text" placeholder="Text to Capitalize" ng-model="caps">
+    <span>CAPITALIZE THIS</span>
+  </label>
+</form>
+
+    <p>{{caps | uppercase}}</p>
+</div>
+</body>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="/public/js/capitalize.js"></script>
+	</body>
+</html>
