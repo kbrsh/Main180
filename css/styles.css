@@ -190,6 +190,7 @@ h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px
 /* ==========================================================================
 Navigation
 ========================================================================== */
+/*
 nav { background-color: #242830; margin-top: -1px; }
 nav ul { list-style: none; padding: 0; }
 nav ul li { color: rgba(255, 255, 255, 0.6); display: block; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
@@ -209,6 +210,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 .navicon { position: relative; height: 26px; }
 .indicator { position: absolute; right: 0 !important; }
 .pull { display: none; }
+*/
 /* ==========================================================================
 Hero
 ========================================================================== */
