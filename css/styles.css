@@ -333,13 +333,6 @@ Waypoints
 Main components 
 
 -------------------------------- */
-html, body {
-  height: 100%;
-}
-
-header {
-  z-index: 3;
-}
 
 .cd-logo, .cd-nav-trigger {
   position: fixed;
