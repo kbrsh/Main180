@@ -7,7 +7,7 @@ canvas {
   cursor: crosshair;
   display: block;
     /* Location of the image */
-  background: url('https://images.unsplash.com/photo-1445233566136-a2a4e2c38bc2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=0d394dec42cfac192d1e278e82cd9e07');
+  background: url('https://images.unsplash.com/photo-1430089888180-1aa87f8f5b6d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=d32d7ac020b391d521c440be9d310baa');
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
