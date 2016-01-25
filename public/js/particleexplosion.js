@@ -11,7 +11,7 @@ canvas.height = window.innerHeight;
 // Configuration, Play with these
 var config = {
     particleNumber: 800,
-    maxParticleSize: 100,
+    maxParticleSize: 10,
     maxSpeed: 40,
     colorVariation: 50
 };
