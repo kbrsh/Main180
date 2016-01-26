@@ -1,3 +1,5 @@
+// Taken from a cool game tutorial
+
 // Initialize rotationDegrees()
 (function($) {
   $.fn.rotationDegrees = function() {
