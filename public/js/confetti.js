@@ -1,3 +1,4 @@
+// Combination of a couple tutorials taken on canvas
 (function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, drawCircle2, drawCircle3, i, range, xpos;
 
