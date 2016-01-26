@@ -1,9 +1,7 @@
-// create checkboxes
-
+// This was taken from a tutorial
 var RES_X = 20;
 var RES_Y = 20;
 var SIZE = 22;
-// super laggy on mobile devices so ease up the res
 if (/iphone|ipad|android/ig.test(navigator.userAgent)) {
   RES_X = 10;
   RES_Y = 10;
