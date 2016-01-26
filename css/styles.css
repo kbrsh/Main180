@@ -670,7 +670,7 @@ Main components
     line-height: 1.8;
   }
 }
-span {
+.loveC {
   color: #666;
   font-size: 12px;
   display: block;
@@ -685,11 +685,11 @@ span {
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
 }
-span a {
+.loveC a {
   color: #000000;
   text-decoration: none;
 }
-span .fa {
+.loveC .fa {
   color: #E90606;
   margin: 0 3px;
   font-size: 10px;
