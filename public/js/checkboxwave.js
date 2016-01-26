@@ -40,7 +40,6 @@ function toggle(targetEntity) {
     var distance = Math.sqrt(dx * dx + dy * dy);
     setTimeout(function() {
       entity.element.checked = checked;
-      // re-run the animation, reading offsetWidth forces reflow
       entity.element.className = '';
       entity.element.offsetWidth;
       entity.element.className = 'grow';
