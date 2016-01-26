@@ -673,10 +673,10 @@ Main components
 .loveC {
   color: white;
   position: absolute;
-  bottom: 10px;
+  float:right;
 }
 .loveC a {
-  color: #000000;
+  color: #1abc9c;
   text-decoration: none;
 }
 .loveC .fa {
