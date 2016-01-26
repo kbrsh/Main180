@@ -672,6 +672,8 @@ Main components
 }
 .loveC {
   color: white;
+  display: inline;
+  vertical-align:middle;
   position: absolute;
   float:right;
 }
