@@ -56,8 +56,8 @@ function Firework(sx, sy, tx, ty) {
     this.coordinates.push([this.x, this.y]);
   }
   this.angle = Math.atan2(ty - sy, tx - sx);
-  this.speed = 2;
-  this.acceleration = 1.05;
+  this.speed = 1;
+  this.acceleration = 1.10;
   this.brightness = random(50, 70);
   this.targetRadius = 1;
 }
@@ -114,7 +114,7 @@ function Particle(x, y) {
   this.friction = 0.95;
   this.gravity = 1;
   this.hue = random(hue - 20, hue + 20);
-  this.brightness = random(50, 90);
+  this.brightness = random(50, 100);
   this.alpha = 1;
   this.decay = random(0.015, 0.03);
 }
