@@ -109,6 +109,7 @@ function Particle(x, y) {
   while (this.coordinateCount--) {
     this.coordinates.push([this.x, this.y]);
   }
+  this.fade     = Math.random() * 0.1;
   this.angle = random(0, Math.PI * 2);
   this.speed = random(1, 17);
   this.friction = 0.95;
@@ -155,7 +156,7 @@ function loop() {
   requestAnimFrame(loop);
 
   hue += 0.5;
-
+  this.alpha -= this.fade;
   ctx.globalCompositeOperation = 'destination-out';
   ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
   ctx.fillRect(0, 0, cw, ch);
