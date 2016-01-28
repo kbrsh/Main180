@@ -114,7 +114,7 @@ function Particle(x, y) {
   this.friction = 0.95;
   this.gravity = 1;
   this.hue = random(hue - 70, hue + 70);
-  this.brightness = random(50, 500);
+  this.brightness = random(50, 121);
   this.alpha = 1;
   this.decay = random(0.015, 0.03);
 }
