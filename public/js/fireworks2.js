@@ -1,4 +1,6 @@
 // Taken from a tutorial
+
+// Request all animations frames for supported browsers
 window.requestAnimFrame = (function() {
   return window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
@@ -27,17 +29,20 @@ var canvas = document.getElementById('canvas'),
 canvas.width = cw;
 canvas.height = ch;
 
+// Simple function that returns a random number
+// Will come in use a lot
 function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+// Calculate the distance to a X and Y coordinate
 function calculateDistance(d1x, d1y, d2x, d2y) {
   var xDistance = d1x - d2x,
     yDistance = d1y - d2y;
   return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
 }
 
-
+// Defining a firework
 function Firework(sx, sy, tx, ty) {
 
   this.x = sx;
@@ -55,13 +60,17 @@ function Firework(sx, sy, tx, ty) {
   while (this.coordinateCount--) {
     this.coordinates.push([this.x, this.y]);
   }
+  // Set angle for rocket
   this.angle = Math.atan2(ty - sy, tx - sx);
+  // Set the speed
   this.speed = 1;
+  // Set the acceleration (if it is less than 1, the rockets will not accelerate)
   this.acceleration = 1.07;
   this.brightness = random(50, 99);
   this.targetRadius = 1;
 }
 
+// Update the fireworks
 Firework.prototype.update = function(index) {
   this.coordinates.pop();
   this.coordinates.unshift([this.x, this.y]);
@@ -109,14 +118,22 @@ function Particle(x, y) {
   while (this.coordinateCount--) {
     this.coordinates.push([this.x, this.y]);
   }
+  // Setting fade value (WIP for Flickering)
   this.fade     = Math.random() * 0.1;
+  // Angle to random
   this.angle = random(0, Math.PI * 2);
+  // Random speed, 1 is to slow :P
   this.speed = random(1, 17);
   this.friction = 0.95;
+  // Set the gravity to get the fireworks to fade out...downwards
   this.gravity = 1;
+  // The hue of the fireworks, these ones are filled with color!
   this.hue = random(hue - 500, hue + 500);
+  // Set the brightness, the more bright, the more its closer to the color white
   this.brightness = random(50, 100);
+  // Set the opacity
   this.alpha = 1;
+  // Set the decay, to use later...
   this.decay = random(0.015, 0.03);
 }
 
@@ -126,6 +143,7 @@ Particle.prototype.update = function(index) {
   this.speed *= this.friction;
   this.x += Math.cos(this.angle) * this.speed;
   this.y += Math.sin(this.angle) * this.speed + this.gravity;
+  // Here is where the decay somes in...some of the particles will be see-through
   this.alpha -= this.decay;
   // this.alpha -= this.fade; <= Working on flicker effect (like real fireworks!)
   if (this.alpha <= this.decay) {
@@ -143,7 +161,7 @@ Particle.prototype.draw = function() {
   ctx.stroke();
 }
 
-
+// Creating the particles
 function createParticles(x, y) {
   var particleCount = 47;
   while (particleCount--) {
@@ -208,5 +226,6 @@ canvas.addEventListener('mouseup', function(e) {
   mousedown = false;
 });
 
+// Let's get started!
 window.onload = loop;
   
