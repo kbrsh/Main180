@@ -116,7 +116,7 @@ function Particle(x, y) {
   this.gravity = 1;
   this.hue = random(hue - 500, hue + 500);
   this.brightness = random(50, 100);
-  this.alpha = random(0, 1);
+  this.alpha = 1;
   this.decay = random(0.015, 0.03);
 }
 
@@ -127,7 +127,7 @@ Particle.prototype.update = function(index) {
   this.x += Math.cos(this.angle) * this.speed;
   this.y += Math.sin(this.angle) * this.speed + this.gravity;
   this.alpha -= this.decay;
-
+  this.alpha -= this.fade;
   if (this.alpha <= this.decay) {
     particles.splice(index, 1);
   }
@@ -156,7 +156,7 @@ function loop() {
   requestAnimFrame(loop);
 
   hue += 0.5;
-  this.alpha -= this.fade;
+
   ctx.globalCompositeOperation = 'destination-out';
   ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
   ctx.fillRect(0, 0, cw, ch);
