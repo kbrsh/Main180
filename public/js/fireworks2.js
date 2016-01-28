@@ -15,7 +15,7 @@ var canvas = document.getElementById('canvas'),
   ch = window.innerHeight,
   fireworks = [],
   particles = [],
-  hue = 120,
+  hue = 150,
   limiterTotal = 5,
   limiterTick = 0,
   timerTotal = 80,
@@ -31,9 +31,9 @@ function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function calculateDistance(p1x, p1y, p2x, p2y) {
-  var xDistance = p1x - p2x,
-    yDistance = p1y - p2y;
+function calculateDistance(d1x, d1y, d2x, d2y) {
+  var xDistance = d1x - d2x,
+    yDistance = d1y - d2y;
   return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
 }
 
