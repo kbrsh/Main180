@@ -127,7 +127,7 @@ Particle.prototype.update = function(index) {
   this.x += Math.cos(this.angle) * this.speed;
   this.y += Math.sin(this.angle) * this.speed + this.gravity;
   this.alpha -= this.decay;
-  this.alpha -= this.fade;
+  // this.alpha -= this.fade; <= Working on flicker effect (like real fireworks!)
   if (this.alpha <= this.decay) {
     particles.splice(index, 1);
   }
