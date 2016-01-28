@@ -1,4 +1,5 @@
-// Taken from a tutorial
+// Basics Taken from a tutorial
+// Then customized ;)
 
 // Request all animations frames for supported browsers
 window.requestAnimFrame = (function() {
