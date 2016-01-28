@@ -144,7 +144,7 @@ Particle.prototype.draw = function() {
 
 
 function createParticles(x, y) {
-  var particleCount = 30;
+  var particleCount = 40;
   while (particleCount--) {
     particles.push(new Particle(x, y));
   }
