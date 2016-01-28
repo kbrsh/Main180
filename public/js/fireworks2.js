@@ -57,7 +57,7 @@ function Firework(sx, sy, tx, ty) {
   }
   this.angle = Math.atan2(ty - sy, tx - sx);
   this.speed = 1;
-  this.acceleration = 1;
+  this.acceleration = 1.07;
   this.brightness = random(50, 99);
   this.targetRadius = 1;
 }
