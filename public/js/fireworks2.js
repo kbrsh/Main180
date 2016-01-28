@@ -110,7 +110,7 @@ function Particle(x, y) {
     this.coordinates.push([this.x, this.y]);
   }
   this.angle = random(0, Math.PI * 2);
-  this.speed = random(1, 10);
+  this.speed = random(1, 7);
   this.friction = 0.95;
   this.gravity = 1;
   this.hue = random(hue - 50, hue + 50);
