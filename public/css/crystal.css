@@ -1,0 +1,43 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   /* Location of the image */
+  background-image: url('https://images.unsplash.com/27/hailo-street.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&s=ee871578f3d79b22cf7afe748f3335f2');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3vw;
+  font-weight: 100;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
