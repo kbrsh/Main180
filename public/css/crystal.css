@@ -6,7 +6,7 @@
 
 body {
    /* Location of the image */
-  background-image: url('https://images.unsplash.com/27/hailo-street.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&s=ee871578f3d79b22cf7afe748f3335f2');
+  background-image: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=99451809786f5c6a94f74f20e7ad22a0');
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
