@@ -1,0 +1,76 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+	overflow:hidden;
+}
+.day {
+	background-image: url('http://www.citygop.org/wp-content/uploads/2015/02/city-wallpaper-7.jpg');
+	  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+	background-color:linear-gradient(#FFA17F, #00223E);
+}
+.night {
+  background-image: url('https://images.unsplash.com/photo-1417632993443-302f4897cf67?crop=entropy&dpr=0.90&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1525');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+	background-color:linear-gradient(#003973, #E5E5BE);
+}
+#Time {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Oswald';
+  color: #ecf0f1;
+  font-size: 0vw;
+  padding: 1vw;
+  border: 1vw solid #ecf0f1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#Time span {
+  margin: 0.3vw;
+  font-size: 10vw;
+}
+
+.seperator {
+  animation: opacity 1.8s infinite ease;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
