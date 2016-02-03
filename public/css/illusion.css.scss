@@ -1,0 +1,92 @@
+$n: 41;
+$s: 80vh;
+$t: 10s;
+$f: .015;
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+input,
+label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+input:checked {
+  
+}
+
+label {
+  padding-left: 20px;
+}
+
+.Wrapper {
+  position: relative;
+  width: $s;
+  height: $s;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #fff;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  
+  input:checked ~ & {
+    transform: rotateY(27deg) rotateX(27deg);
+  }
+}
+
+.Ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  
+  &:before {
+    content: '';
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #fff;
+    background-color: #000;
+  }
+}
+
+@for $i from 1 through $n {
+  .Ring:nth-child(#{$i}) {
+    
+    $sp: $s - ($s - $s * $f) / $n * $i;
+    $si: $s - $s * $f / $n * $i;
+    
+    width: $si;
+    height: $si;
+    margin: $si * -.5;
+    
+    $d: 1.5s / $n * $i * -1;
+    animation: rotate $t $d infinite ease-in-out;
+    
+    &:before {
+      height: $sp;
+      width: $sp;
+      transform: translateZ($s / $n * $i * .75)
+    }
+  }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(120deg) }
+  20% { transform: rotate(600deg) }
+  60% { transform: rotate(-20deg) }
+  100% { transform: rotate(480deg) }
+}
