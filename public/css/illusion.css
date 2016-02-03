@@ -546,15 +546,15 @@ input:checked ~ .Wrapper {
 
 @keyframes rotate {
   0% {
-    transform: rotate(120deg);
+    transform: rotate(150deg);
   }
   20% {
-    transform: rotate(600deg);
+    transform: rotate(500deg);
   }
   60% {
-    transform: rotate(-20deg);
+    transform: rotate(-30deg);
   }
   100% {
-    transform: rotate(480deg);
+    transform: rotate(470deg);
   }
 }
