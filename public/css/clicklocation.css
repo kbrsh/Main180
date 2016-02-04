@@ -1,0 +1,71 @@
+body {
+ /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1431400445088-1750c997c6b5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=bbb37509214bfc13d82079f175cb418e');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  background-color: #3f72fe;
+  font-family: monospace;
+}
+i {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  margin: -30px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  z-index: 9999;
+}
+i.active {
+  -webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+  -moz-transition: -moz-transform 400ms ease, opacity 400ms ease;
+  -o-transition: -o-transform 400ms ease, opacity 400ms ease;
+  -ms-transition: -ms-transform 400ms ease, opacity 400ms ease;
+  transition: transform 400ms ease, opacity 400ms ease;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.1em;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
