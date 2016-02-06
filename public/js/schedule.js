@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // Taken from tutorial on scotch.io
 
+=======
+>>>>>>> 530ef836aa5849ab92ba2964f928490877b743f8
 angular.module('scheduleApp', ['firebase'])
 
 .controller('mainController', function($scope, $firebase) {

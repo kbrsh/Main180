@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <snippet>
   <content>
 # Project 180 Days
@@ -13,3 +14,6 @@ You can use this repo to see my code, and maybe even refactor it!
 </content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
+=======
+# Main 180
+>>>>>>> 530ef836aa5849ab92ba2964f928490877b743f8

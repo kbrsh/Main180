@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // Taken from a cool game tutorial
 
+=======
+>>>>>>> 530ef836aa5849ab92ba2964f928490877b743f8
 // Initialize rotationDegrees()
 (function($) {
   $.fn.rotationDegrees = function() {

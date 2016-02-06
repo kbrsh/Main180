@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // Combination of a couple tutorials taken on canvas
+=======
+>>>>>>> 530ef836aa5849ab92ba2964f928490877b743f8
 (function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, drawCircle2, drawCircle3, i, range, xpos;
 
