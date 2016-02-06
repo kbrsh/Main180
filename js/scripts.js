@@ -146,7 +146,7 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   });
   $('.n-link').click(function() {
-   $(this).removeClass('active');
+   $('#toggle').removeClass('active');
    $('#overlay').removeClass('open');
   });
 var greeting = function() {
