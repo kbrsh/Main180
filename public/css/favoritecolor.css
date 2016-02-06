@@ -1,0 +1,43 @@
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 5% 0 0 0;
+  font-family: 'Montserrat', 'sans-serif';
+  background-color: beige;
+}
+
+h1,
+input {
+  font-size: 2em;
+}
+
+input:placeholder-shown {
+  color: black;
+}
+
+input {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 3px dotted #333;
+  border-left: 0;
+  background: transparent;
+  text-align: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 3px #333 solid;
+  outline: 0;
+}
+
+input:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border-bottom: 3px #333 solid;
+}

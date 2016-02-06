@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lorem Ipsum</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70792533-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<style>
+        h1 {
+            color:white;
+        }
+      body   {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+          text-align: center;
+}
+    p {
+      font-size: 20px;
+        color:white;
+    }
+    input {
+      border: 0;
+      padding: 20px;
+      font-size: 20px;
+    }
+.btn {
+	border: none;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 20px 50px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+        .btn-2 {
+	background: #e74c3c;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+        /* Button 2c */
+.btn-2c {
+	border-radius: 5px;
+}
+
+.btn-2c:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2c:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+    img {
+      padding: 40px 0px 0px 0px;
+    }
+        body {
+        	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  /* Location of the image */
+  background-image: url('https://images.unsplash.com/27/hailo-street.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&s=ee871578f3d79b22cf7afe748f3335f2');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+	</style>
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <h1>LOREM IPSUM</h1>
+    <button class="btn btn-2 btn-2c">SHOW MORE</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis neque non est dictum rhoncus eu sit amet arcu. Donec venenatis metus justo, at varius dolor mollis sed. Vestibulum eget sem et risus tempus vehicula a ac leo. Vivamus posuere orci in felis accumsan vestibulum. Nunc elementum risus quis laoreet vehicula. Sed sit amet purus dui. Aenean a blandit tortor, a efficitur turpis. Aliquam libero dui, mollis sed facilisis sit amet, porttitor ut erat. Vestibulum placerat pellentesque elit, ut cursus odio. In id condimentum lacus. Etiam aliquet ullamcorper orci, non condimentum nunc auctor at. Donec in dapibus est. Phasellus feugiat molestie vulputate. In posuere ut odio eu egestas.</p>
+    	<script>
+		$(document).ready(function(){
+        $("p").hide();
+    $(".btn").click(function(){
+        $("p").show();
+        $("button").hide();
+        $("h1").hide();
+    });
+});
+	</script>
+</body>
+</html>

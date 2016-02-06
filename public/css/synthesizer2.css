@@ -1,0 +1,94 @@
+body {
+  font-family: 'Century Gothic', sans-serif;
+    /* Location of the image */
+  background-image: url('https://images.unsplash.com/32/6Icr9fARMmTjTHqTzK8z_DSC_0123.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=daa627483e622ee4279de1e9e6c48f4f');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #303030;
+}
+
+figure.keyboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 370px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+i {
+  position: relative;
+  display: block;
+  float: left;
+  color: #eee;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  min-width: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-style: normal;
+  padding: 3px;
+  margin: 2px;
+  cursor: pointer;
+  transition: all .2s;
+}
+i[data-key="A"] {
+  clear: left;
+  margin-left: 10px;
+}
+i[data-key="Z"] {
+  clear: left;
+  margin-left: 28px;
+}
+i[data-key]:after {
+  content: attr(data-note) " Hz";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  line-height: 10px;
+  padding-top: 4px;
+  color: #303030;
+  opacity: 0;
+}
+i.play {
+  display: none;
+  clear: both;
+  margin: 20px 50%;
+  transform: translateX(-50%);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+i[disabled], i[disabled]:hover, i[disabled]:focus {
+  opacity: .1;
+  cursor: default;
+  background: none;
+  color: #eee !important;
+}
+i:hover, i:focus, i.active {
+  background: #eee;
+}
+i:hover.play, i:focus.play, i.active.play {
+  color: #333;
+}
+i:hover:after, i:focus:after, i.active:after {
+  opacity: 1;
+}

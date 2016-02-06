@@ -1,0 +1,118 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+  height: 100%;
+  	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+  background-color: #292c2f;
+  font-family: monospace;
+  overflow: hidden;
+}
+input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 200px;
+  text-align: center;
+  height: 70px;
+  color: #ccc;
+  margin: 0;
+  border-left: 1px solid rgba(17,17,17,0.4);
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+input.one {
+  color: #FC354C;
+}
+input.two {
+  color: #0ABFBC;
+}
+input:focus {
+  background: #fff;
+  color: #000;
+}
+.gradient {
+  height: calc(100% - 70px);
+  background-image: -webkit-linear-gradient(270deg, #FC354C, #0ABFBC);
+  background-image: -moz-linear-gradient(270deg, #FC354C, #0ABFBC);
+  background-image: -o-linear-gradient(270deg, #FC354C, #0ABFBC);
+  background-image: -ms-linear-gradient(270deg, #FC354C, #0ABFBC);
+  background-image: linear-gradient(180deg, #FC354C, #0ABFBC);
+  position: absolute;
+  width: 100%;
+}
+header {
+  background: #252525;
+  height: 70px;
+  line-height: 70px;
+}
+#currentVal {
+  color: #424242;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  float: right;
+}
+#currentVal span {
+  color: #ccc;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+}
+#range {
+  width: 180px;
+  border: 0;
+  height: 4px;
+  background: #424242;
+  outline: none;
+  position: absolute;
+  left: 30px;
+  top: 32px;
+}
+#range .ui-slider-handle {
+  position: absolute;
+  margin: 0px 0 0 -7px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: #fff;
+  border: 0;
+  height: 14px;
+  width: 14px;
+  outline: none;
+  cursor: pointer;
+}
+#range .ui-slider-handle:hover,
+#range .ui-slider-handle:focus {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#range .ui-slider-range {
+  background: #4ac1ff;
+}

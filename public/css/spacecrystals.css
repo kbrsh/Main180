@@ -1,0 +1,31 @@
+body {
+  color: #000;
+  font-family: 'Century Gothic';
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 0px;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  top: 24px;
+  font-size: 12px;
+}
+
+h2 {
+  top: 44px;
+  font-size: 10px;
+  opacity: 0.7;
+}

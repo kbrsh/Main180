@@ -1,0 +1,19 @@
+    @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    body {
+      transition: all 0.4s ease;
+      font-family: 'Varela Round', sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 20vh;
+      transition: all 0.4s ease;
+      position: relative;
+      color: rgba(0, 0, 0, 0.5);
+    }

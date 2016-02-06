@@ -1,0 +1,192 @@
+body {
+  padding-bottom: 50px;
+	font-family: 'Century Gothic', Century Gothic, sans-serif;
+	color: white;
+	/* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1446797376004-9352dfc9f789?crop=entropy&dpr=0.90&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1525');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+.times {
+  margin-bottom: 50px;
+}
+
+
+/* checkbox - each time slot */
+
+.time-slot {}
+
+.time-slot input {
+  display: none;
+}
+
+.time-slot label {
+  padding: 10px 20px;
+  color: #FFF;
+  cursor: pointer;
+  background: #EEE;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+
+.time-slot input:checked ~ label {
+  background: #f2dede;
+  cursor: not-allowed;
+  animation: flashBooked 0.5s ease;
+  -moz-animation: flashBooked 0.5s ease;
+  -webkit-animation: flashBooked 0.5s ease;
+}
+
+.time-slot input:not(:checked) ~ label {
+  background: #6AB074;
+  animation: flashAvailable 0.5s ease;
+  -moz-animation: flashAvailable 0.5s ease;
+  -webkit-animation: flashAvailable 0.5s ease;
+}
+
+@keyframes flashBooked {
+  0%,
+  100% {
+    background: #f2dede;
+    transform: scale(1);
+  }
+  50% {
+    background: #F99090;
+    transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes flashBooked {
+  0%,
+  100% {
+    background: #f2dede;
+    transform: scale(1);
+  }
+  50% {
+    background: #F99090;
+    transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes flashBooked {
+  0%,
+  100% {
+    background: #f2dede;
+    transform: scale(1);
+  }
+  50% {
+    background: #F99090;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes flashAvailable {
+  0%,
+  100% {
+    background: #6AB074;
+    transform: scale(1);
+  }
+  50% {
+    background: rgb(119, 218, 78);
+    transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes flashAvailable {
+  0%,
+  100% {
+    background: #6AB074;
+    transform: scale(1);
+  }
+  50% {
+    background: rgb(119, 218, 78);
+    transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes flashAvailable {
+  0%,
+  100% {
+    background: #6AB074;
+    transform: scale(1);
+  }
+  50% {
+    background: rgb(119, 218, 78);
+    transform: scale(1.5);
+  }
+}
+.btnn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btnn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Button 2 */
+.btnn-2 {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+    border-radius: 5px;
+}
+
+
+.btnn-2:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btnn-2:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+

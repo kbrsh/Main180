@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #32363F;
+  font: 18px 'Open Sans', sans-serif;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: table-cell;
+ /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  vertical-align: middle;
+}
+
+#wrapper {
+  margin: 40px;
+  background: #D6C2A3;
+  width: calc(100% - 80px);
+}
+
+h1 {
+  display: block;
+  padding: 20px 20px 12px;
+  font: 700 36px 'Century Gothic', 'Open Sans', sans-serif;
+  background: #E84949;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#prompt {
+  padding: 20px;
+}
+
+#prompt p {
+  padding-bottom: 8px;
+}
+
+#prompt p b {
+  font-weight: 700;
+}
+
+#options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 20px 28px;
+  text-align: center;
+}
+
+#options button {
+  margin: 0px 8px;
+  padding: 8px 20px;
+  background: #C2AE8F;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+#options button:hover,
+#options button:active {
+  background: #E84949;
+  color: #FAFAFA;
+  content: '?';
+}
+button:hover:active {
+  content: '?';
+}
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation-name: tada;
+}
