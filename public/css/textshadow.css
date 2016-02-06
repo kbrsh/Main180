@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+body {
+  background-color: #45a1de;
+  font-family: 'Raleway', 'Roboto', 'Century Gothic';
+cursor: url(http://cur.cursors-4u.net/user/use-1/use150.ani), url(http://cur.cursors-4u.net/user/use-1/use150.png), progress;}
+
+
+h1 {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  color: #FFF;
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #444;
+}
