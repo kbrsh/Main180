@@ -1,9 +1,6 @@
 ! function() {
     "use strict";
 
-    function randomColor() {
-        return '#' + Math.random().toString(16).slice(2, 8);
-    };
     var canvas = new ge1doot.Canvas();
     var ctx = canvas.ctx;
     var pointer = canvas.pointer
@@ -23,7 +20,7 @@
         this.blob = document.createElement('canvas');
         this.blob.width = this.blob.height = rad * 2;
         var ict = this.blob.getContext('2d');
-        ict.fillStyle = randomColor();
+        ict.fillStyle = "#1dd2af";
         ict.arc(rad, rad, rad, 0, 2 * Math.PI);
         ict.fill();
         this.x = x;
