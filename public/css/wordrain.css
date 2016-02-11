@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-transition: none !important;
+  	-moz-transition: none !important;
+  	-ms-transition: none !important;
+  	-o-transition: none !important;
+}
+body{
+  /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1430462844040-a5a7d06f87f3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=b1918f384c794123c5179091350d56b5');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  color: #eee;
+  font-weight: 100;
+  font-family: 'Varela Round', source-sans-pro, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+ 
+}
+.wrap {
+  width: 550px;
+  margin: 30px auto;
+}
+
+h1, h3 {
+  text-align: center;
+  margin: 3px 0;
+}
+h1 {
+  font-size: 10vh;
+  letter-spacing: 1vh;
+}
+h3 {
+  font-size: 6vh; 
+}
+#letters {
+  margin: -20px 0 0 0;
+  position: relative;
+  height: 500px;
+  text-align: center;
+}
+
+.cloud {
+  width: 100%;
+  padding: 10vh 0;
+  color: rgba(0,0,0,0.2);
+  background: #eee;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.rain {
+  	animation: rain 2s;
+    -moz-animation: rain 2s; /* Firefox */
+    -webkit-animation: rain 2s; /* Safari and Chrome */
+    -o-animation: rain 2s; /* Opera */
+    webkit-animation-fill-mode: forwards;
+}
+
+@keyframes rain {
+    from {
+        opacity: 1;
+    }
+    to {
+        top: 500px;
+        opacity: 0;
+    }
+}
+@-moz-keyframes rain { /* Firefox */
+    from {
+        opacity: 1;
+    }
+    to {
+        top: 500px;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes rain { /* Safari and Chrome */
+    from {
+        opacity: 1;
+    }
+    to {
+        top: 500px;
+        opacity: 0;
+    }
+}
+@-o-keyframes rain { /* Opera */
+    from {
+        opacity: 1;
+    }
+    to {
+        top: 500px;
+        opacity: 0;
+    }
+}
