@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Give+You+Glory);
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
 body {
+  color: white;
   margin: 0px;
   overflow: hidden;
   font-family: 'Give You Glory', cursive;
@@ -7,6 +8,10 @@ body {
 }
 body:hover span {
   display: none;
+}
+
+canvas {
+  background: #000;
 }
 
 span {
