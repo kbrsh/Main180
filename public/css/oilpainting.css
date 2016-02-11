@@ -4,7 +4,7 @@ body {
   margin: 0px;
   overflow: hidden;
   font-family: 'Give You Glory', cursive;
-  font-size: 15vh;
+  font-size: 10vh;
 }
 body:hover span {
   display: none;
