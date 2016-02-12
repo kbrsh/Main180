@@ -1,121 +1,118 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
-
 .page {
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
-
 .color-bg-start {
-  background-color: salmon;
+    background-color: salmon;
 }
-
 .bg-animate-color {
-  -webkit-animation: random-bg .5s linear infinite;
-          animation: random-bg .5s linear infinite;
+    -webkit-animation: random-bg .5s linear infinite;
+    animation: random-bg .5s linear infinite;
 }
-
 @-webkit-keyframes random-bg {
-  from {
-    -webkit-filter: hue-rotate(0);
-            filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
+    from {
+        -webkit-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
 }
-
 @keyframes random-bg {
-  from {
-    -webkit-filter: hue-rotate(0);
-            filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
+    from {
+        -webkit-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
 }
 .fun-btn {
-  background-color: salmon;
-  color: white;
-  padding: 2em 3em;
-  border: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  border-radius: 5px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  outline: none;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  cursor: pointer;
-  font-weight: bold;
+    background-color: salmon;
+    color: white;
+    padding: 2em 3em;
+    border: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    cursor: pointer;
+    font-weight: bold;
 }
 .fun-btn:hover {
-  -webkit-animation: random-bg .5s linear infinite, grow 1300ms ease infinite;
-          animation: random-bg .5s linear infinite, grow 1300ms ease infinite;
+    -webkit-animation: random-bg .5s linear infinite, grow 1300ms ease infinite;
+    animation: random-bg .5s linear infinite, grow 1300ms ease infinite;
 }
-
 .start-fun {
-  background-color: white !important;
-  color: salmon !important;
+    background-color: white !important;
+    color: salmon !important;
 }
-
 @-webkit-keyframes grow {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  14% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-  28% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  42% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
-
 @keyframes grow {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  14% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-  28% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  42% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
