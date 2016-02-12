@@ -1,8 +1,8 @@
 
-function OilPainting(){
+function StartOilPainting(){
   
   var canvas;
-	var context;
+	var ctx;
 
 	var width;
 	var height;
@@ -13,9 +13,9 @@ function OilPainting(){
 	var colour = '#'+Math.floor(Math.random()*16777215).toString(16);
 	
 	
-	this.initialize = function(){
+	this.init = function(){
 		canvas  = document.getElementById("canvas");
-		context = canvas.getContext('2d');
+		ctx = canvas.getContext('2d');
 	
 		width = window.innerWidth
 		height = window.innerHeight
@@ -50,41 +50,41 @@ function OilPainting(){
 	   
 	   // ------- Draw -------
 	   var lWidth = (Math.random()+20/10-0.5)*size+(1-Math.random()+30/20-0.5)*size;
-	   context.lineWidth = lWidth;
-	   context.strokeWidth = lWidth;
+	   ctx.lineWidth = lWidth;
+	   ctx.strokeWidth = lWidth;
 	   
-	   context.lineCap = 'round';
-	    context.lineJoin = 'round';
+	   ctx.lineCap = 'round';
+	    ctx.lineJoin = 'round';
 	    
-	   context.beginPath(); 
-	   context.moveTo(startPos.x, startPos.y);
-	   context.quadraticCurveTo(dist.x, dist.y, prevPos.x, prevPos.y);
+	   ctx.beginPath(); 
+	   ctx.moveTo(startPos.x, startPos.y);
+	   ctx.quadraticCurveTo(dist.x, dist.y, prevPos.x, prevPos.y);
 	   
-	   context.fillStyle = colour;
-	   context.strokeStyle = colour;
+	   ctx.fillStyle = colour;
+	   ctx.strokeStyle = colour;
 	
-	   context.moveTo(startPos.x + a, startPos.y + a);
-	   context.lineTo(startPos.x + r + a, startPos.y + r + a);
+	   ctx.moveTo(startPos.x + a, startPos.y + a);
+	   ctx.lineTo(startPos.x + r + a, startPos.y + r + a);
 	   
-	   context.stroke();
-	   context.fill();
+	   ctx.stroke();
+	   ctx.fill();
 	   
-	   context.closePath();
+	   ctx.closePath();
 	}
 	
 	var MouseDown = function(e) {
 		e.preventDefault();
 		colour = '#'+Math.floor(Math.random()*16777215).toString(16);
-		context.fillStyle = colour;
-	    context.strokeStyle = colour;
+		ctx.fillStyle = colour;
+	    ctx.strokeStyle = colour;
 	}
 	
 	var MouseDbl = function(e) {
 		e.preventDefault();
-		context.clearRect(0, 0, width, height);
+		ctx.clearRect(0, 0, width, height);
 	}
 		
 }
 
-var app = new OilPainting();
-app.initialize();
+var app = new StartOilPainting();
+app.init();
