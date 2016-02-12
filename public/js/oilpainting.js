@@ -6,11 +6,11 @@ function StartOilPainting() {
     var width;
     var height;
 
-    var startPos = {
+    var sP = {
         x: window.innerWidth / 2,
         y: window.innerHeight / 2
     };
-    var prevPos = {
+    var pP = {
         x: window.innerWidth / 2,
         y: 0
     };
@@ -38,8 +38,8 @@ function StartOilPainting() {
 
 
     var MouseMove = function(e) {
-        var distance = Math.sqrt(Math.pow(prevPos.x - startPos.x, 2) +
-            Math.pow(prevPos.y - startPos.y, 2));
+        var distance = Math.sqrt(Math.pow(pP.x - sP.x, 2) +
+            Math.pow(pP.y - sP.y, 2));
 
         var a = distance * 10 * (Math.pow(Math.random(), 2) - 0.5);
 
@@ -47,14 +47,14 @@ function StartOilPainting() {
 
         var size = (Math.random() * 15) / distance;
 
-        dist.x = (prevPos.x - startPos.x) * Math.sin(0.5) + startPos.x;
-        dist.y = (prevPos.y - startPos.y) * Math.cos(0.5) + startPos.y;
+        dist.x = (pP.x - sP.x) * Math.sin(0.5) + sP.x;
+        dist.y = (pP.y - sP.y) * Math.cos(0.5) + sP.y;
 
-        startPos.x = prevPos.x;
-        startPos.y = prevPos.y;
+        sP.x = pP.x;
+        sP.y = pP.y;
 
-        prevPos.x = (e.layerX);
-        prevPos.y = (e.layerY);
+        pP.x = (e.layerX);
+        pP.y = (e.layerY);
 
         // ------- Draw -------
         var lWidth = (Math.random() + 20 / 10 - 0.5) * size + (1 - Math.random() + 30 / 20 - 0.5) * size;
@@ -65,14 +65,14 @@ function StartOilPainting() {
         ctx.lineJoin = 'round';
 
         ctx.beginPath();
-        ctx.moveTo(startPos.x, startPos.y);
-        ctx.quadraticCurveTo(dist.x, dist.y, prevPos.x, prevPos.y);
+        ctx.moveTo(sP.x, sP.y);
+        ctx.quadraticCurveTo(dist.x, dist.y, pP.x, pP.y);
 
         ctx.fillStyle = colour;
         ctx.strokeStyle = colour;
 
-        ctx.moveTo(startPos.x + a, startPos.y + a);
-        ctx.lineTo(startPos.x + r + a, startPos.y + r + a);
+        ctx.moveTo(sP.x + a, sP.y + a);
+        ctx.lineTo(sP.x + r + a, sP.y + r + a);
 
         ctx.stroke();
         ctx.fill();
