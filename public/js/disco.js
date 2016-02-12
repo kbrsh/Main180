@@ -7,7 +7,7 @@ $('.fun-btn').on('click', function(event) {
   //change text when when button is clicked
 
   $(this).hasClass('start-fun') ?
-    $(this).text('stop the fun') :
-    $(this).text('start the fun');
+    $(this).text('stop the disco') :
+    $(this).text('start the disco');
 
 });
