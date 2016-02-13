@@ -1,0 +1,129 @@
+body {
+  background: #000;
+  position: relative;
+}
+
+.circle {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  position: absolute;
+  top: 30px;
+  -webkit-transform: rotateX(-70deg);
+          transform: rotateX(-70deg);
+  -webkit-animation: moveme 2.5s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+          animation: moveme 2.5s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.circle:nth-child(1) {
+  width: 365px;
+  height: 365px;
+  left: calc(50% - 182.5px);
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.circle:nth-child(2) {
+  width: 330px;
+  height: 330px;
+  left: calc(50% - 165px);
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+  width: 295px;
+  height: 295px;
+  left: calc(50% - 147.5px);
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.circle:nth-child(4) {
+  width: 260px;
+  height: 260px;
+  left: calc(50% - 130px);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.circle:nth-child(5) {
+  width: 225px;
+  height: 225px;
+  left: calc(50% - 112.5px);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.circle:nth-child(6) {
+  width: 190px;
+  height: 190px;
+  left: calc(50% - 95px);
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.circle:nth-child(7) {
+  width: 155px;
+  height: 155px;
+  left: calc(50% - 77.5px);
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.circle:nth-child(8) {
+  width: 120px;
+  height: 120px;
+  left: calc(50% - 60px);
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.circle:nth-child(9) {
+  width: 85px;
+  height: 85px;
+  left: calc(50% - 42.5px);
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.circle:nth-child(10) {
+  width: 50px;
+  height: 50px;
+  left: calc(50% - 25px);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.circle:nth-child(11) {
+  width: 15px;
+  height: 15px;
+  left: calc(50% - 7.5px);
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+@-webkit-keyframes moveme {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 160px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes moveme {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 160px;
+  }
+  100% {
+    top: 30px;
+  }
+}
