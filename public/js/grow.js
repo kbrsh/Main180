@@ -6,10 +6,10 @@ var h = c.height=window.innerHeight;
 var X = w/2;
 var Y = h/2;
 
-var goX1 = 2;
-var goX2 = 1;
-var goY1 = 2;
-var goY2 = 1;
+var gX1 = 2;
+var gX2 = 1;
+var gY1 = 2;
+var gY2 = 1;
 var colorUpdate = 0;
 var mouse = {
       x: X,
@@ -33,8 +33,8 @@ var particles = {},
 function Particle(){
   this.x = mouse.x;
   this.y = mouse.y;
-  this.vx = Math.random() * goX1 - goX2;
-  this.vy = Math.random() * goY1 - goY2;
+  this.vx = Math.random() * gX1 - gX2;
+  this.vy = Math.random() * gY1 - gY2;
   particleIndex++;
   particles[particleIndex] = this;
   this.id = particleIndex;
