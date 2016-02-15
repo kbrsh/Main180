@@ -37,6 +37,7 @@ document.addEventListener('mousemove', function(e){
 //when clicked, the set-up function runs
 document.addEventListener('mousedown', 
   function() {
+  	$('h1').addClass('hidden');
     var particles = [];
 for(i = 0; i < partNum; i++) {
   particles.push(new particle);
