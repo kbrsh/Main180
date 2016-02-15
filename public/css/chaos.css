@@ -1,0 +1,19 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css?family=Sniglet|Oswald");
+
+body, html, canvas {
+  margin: 0px; 
+  padding: 0px; 
+  position: absolute; 
+  background-color: #151B1F; 
+}
+
+h1 {
+  text-align:center;
+  position: fixed; 
+  z-index: 1000; 
+  color: #ecf0f1; 
+  font-family: Sniglet; 
+  font-size: 10vh;  
+  pointer-events: none; 
+}
