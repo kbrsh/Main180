@@ -1,0 +1,11 @@
+body {
+  overflow: hidden;
+}
+
+#c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://images.unsplash.com/photo-1444424050109-31f057e1e858?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=fe78a2fd285274f8a386db552d8bb7e6");
+  overflow: hidden;
+}
