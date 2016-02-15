@@ -17,3 +17,7 @@ h1 {
   font-size: 10vh;  
   pointer-events: none; 
 }
+
+.hidden {
+  display:none;
+}
