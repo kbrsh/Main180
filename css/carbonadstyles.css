@@ -91,7 +91,7 @@
 		padding: 10px;
 	}
 
-	#cdawrap .carbon-img {
+	#cdawrap /* .carbon-img */ {
 		display: none;
 	}
 
