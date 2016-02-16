@@ -67,7 +67,7 @@
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px){ 
 	#cdawrap {
 		width: 100%; 
 		height: auto; 
@@ -91,7 +91,7 @@
 		padding: 10px;
 	}
 
-	.carbon-img  {
+	#cdawrap .carbon-img {
 		display: none;
 	}
 
