@@ -1,4 +1,4 @@
-var filename='http://www.main180.tk/css/carbonadstyles.css' + new Date().getTime();		
+var filename='http://www.main180.tk/css/carbonadstyles.css?' + new Date().getTime();		
 var fileref=document.createElement("link");
 fileref.setAttribute("rel", "stylesheet");
 fileref.setAttribute("type", "text/css");
