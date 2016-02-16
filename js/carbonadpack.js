@@ -40,3 +40,8 @@ function checkAd() {
 	if (!carbonImg) return;
 
 	var adImgHeight = carbonImg.offsetHeight;
+
+	if (adImgHeight >= 30) {
+		adChecked = true;
+	} 
+}
