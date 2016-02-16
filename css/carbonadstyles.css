@@ -102,7 +102,3 @@
 		line-height: 30px;
 	}
 }
-
-@media screen and (max-width: 460px){ 
-	#cdawrap { display: none; }
-}
