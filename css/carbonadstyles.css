@@ -90,24 +90,11 @@
 		font-size: 9px;
 		padding: 10px;
 	}
-.carbon-text {
-    display: block;
-    float: left;
-    max-width: 50%;
-    text-align: left;
-  }
-
-  .carbon-img {
-    float: left;
-    margin-right: 1em;
-  }
-
-  .carbon-poweredby {
-    display: block;
-    float: right;
-    margin-top: -1.9em;
-    font-size: .8em;
-  }
+/*
+	#cdawrap .carbon-img {
+		display: none;
+	}
+*/
 	#cda-remove {
 		width: 30px;
 		height: 30px;
