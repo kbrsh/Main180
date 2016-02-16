@@ -74,8 +74,8 @@
 		right: 0px; 
 		top: auto !important; 
 		bottom: 0px !important;
-		left: 0px !important;
-		background: #fff;
+		left: 0px !importat;
+		background: #fff;n
 		padding: 15px 50px 10px 10px;
 		text-align: left;
 		font-size: 11px;
@@ -90,6 +90,15 @@
 		font-size: 9px;
 		padding: 10px;
 	}
+	.carbon-text {
+    		float: left;
+    		text-align: left;
+	 }
+
+  .carbon-img {
+    float: left;
+    margin-right: 1em;
+  }
 /*
 	#cdawrap .carbon-img {
 		display: none;
