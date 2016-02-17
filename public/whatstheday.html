@@ -53,18 +53,18 @@
 <script language="JavaScript" 
      type="text/javascript" class="today"> 
 
-     var veckodag = new Array() 
-     veckodag[0]="SUNDAY FUNDAY" 
-     veckodag[1]="MESSED UP MONDAY" 
-     veckodag[2]="THOUGHTFUL TUESDAY" 
-     veckodag[3]="WASTED WEDNESDAY" 
-     veckodag[4]="THIRSTY THURSDAY" 
-     veckodag[5]="FRIDAY! PARTY!" 
-     veckodag[6]="SUPER SATURDAY" 
+     var day = new Array() 
+     day[0]="SUNDAY FUNDAY" 
+     day[1]="MESSED UP MONDAY" 
+     day[2]="THOUGHTFUL TUESDAY" 
+     day[3]="WASTED WEDNESDAY" 
+     day[4]="THIRSTY THURSDAY" 
+     day[5]="FRIDAY! PARTY!" 
+     day[6]="SUPER SATURDAY" 
        
-     var iljdat = new Date() 
-     var dagen = iljdat.getDay() 
-     document.write(veckodag[dagen]+"!") 
+     var dayToday = new Date() 
+     var displayDay = dayToday.getDay() 
+     document.write(day[displayDay]+"!") 
 
 </script>
             </span>
