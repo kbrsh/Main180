@@ -1,0 +1,15 @@
+body {
+  background-color: #000000;
+  margin: 0;
+  overflow: hidden;
+}
+
+#info {
+  position: absolute;
+  width: 100%;
+  color: #80a000;
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 13px;
+  text-align: center;
+}
