@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 html {
 	overflow: hidden;
 	touch-action: none;
@@ -27,7 +27,7 @@ body {
 	width:100%;
 	text-align:center;
 	bottom:10px;
-	font-family:'Poiret One', cursive;
+	font-family:'Varela Round', cursive;
 	font-size:10vh;
 	pointer-events:none;
 }
