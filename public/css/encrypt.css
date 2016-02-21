@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  font-size: 16px;
+}
+
+#main {
+  position: absolute;
+  left: 50%;
+  width: 320px;
+  margin-left: -160px;
+  top: 50%;
+  height: 76px;
+  margin-top: -38px;
+}
+
+input {
+  width: 308px;
+  border: 1px solid black;
+  padding: 6px;
+  margin: auto;
+  outline: none;
+  font-size: 16px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#result {
+  width: 320px;
+  border: 1px solid transparent;
+  padding: 0;
+  margin: auto;
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#result > div {
+  width: 80px;
+  height: 10px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  transition: background .2s;
+  margin-top: 5px;
+}
