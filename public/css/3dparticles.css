@@ -1,0 +1,40 @@
+html,
+body,
+#scene {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: black;
+}
+
+#scene {
+  perspective: 150px; /* the lower this is, the fancier it gets */
+}
+
+#emitter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d;
+  animation: rotate 12s infinite linear;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 20%;
+  transition: 3s ease-in;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0) rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateZ(180deg);
+  }
+}
