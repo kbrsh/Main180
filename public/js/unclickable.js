@@ -14,7 +14,7 @@
 
 	
 	lolBtn.on("mouseover", function() {
-		console.log("whoops");
+		console.log("Oopsy!");
 		count += 1;
 		console.log(count);
 
@@ -28,7 +28,7 @@
 	});
 	lolBtn.on("click", function() {
 		alert("Either there was a glitch in the matrix or you are one sly devil. It took you " + count + " attempts.")
-		alert("Don't forget to comment your number of attempts. I hope you enjoyed this pen. =)");
+		alert("Don't forget to tell your friends to share the love, I hope you enjoyed :D");
 		modal.fadeOut(150);
 	});
 
