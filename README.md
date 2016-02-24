@@ -20,7 +20,7 @@ You can use this repo to see my code, and maybe even refactor it!
 
 [![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://180io.com)
 
-[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://180io.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://180io.com)
 
 [![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://180io.com)
 
