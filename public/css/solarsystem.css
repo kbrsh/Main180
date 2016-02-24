@@ -1,0 +1,299 @@
+@import url("http://fonts.googleapis.com/css?family=PT+Sans+Narrow");
+
+body {
+    font: 14px/1.5 "PT Sans Narrow", sans-serif;
+    background: #080e24 url(https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f215709275aad0e6d8e4e7e642bf1e94);
+	/* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+    color: #626668;
+}
+
+ul#descriptions {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    list-style: none;
+}
+ul#descriptions h2 {
+    cursor: pointer;
+    color: #386077;
+    -webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    font-size: 20px;
+    position: relative;
+    z-index: 101;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+	margin-bottom: -15px;
+}
+ul#descriptions h2:hover {
+   color: #aa4200;
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+ul#descriptions li p {
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 200px;
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    background: #0f132c;
+    padding: 30px;
+    color: #767892;
+    line-height: 1.7;
+    z-index: 100;
+    border: 1px solid #1c203c;
+}
+ul#descriptions h2:hover+p {
+    visibility: visible;
+    opacity: 0.9;
+    left: -280px;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.milky-way {
+  height: 60vmin;
+  margin: 10% auto;
+  width: 60vmin;
+}
+
+.star, .planet {
+  height: 50%;
+  left: calc(50% - 50% * .5);
+  top: calc(50% - 50% * .5);
+  width: 50%;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.sun {
+  height: 5vmax;
+  left: calc(50% - 5vmax * .5);
+  top: calc(50% - 5vmax * .5);
+  width: 5vmax;
+  background: #fdef89;
+  border: 0;
+}
+
+.planet:nth-of-type(1) {
+  height: 10vmax;
+  left: calc(50% - 10vmax * .5);
+  top: calc(50% - 10vmax * .5);
+  width: 10vmax;
+  -webkit-animation: orbit 2.6s infinite linear -9s;
+          animation: orbit 2.6s infinite linear -9s;
+}
+
+.planet:nth-of-type(2) {
+  height: 15vmax;
+  left: calc(50% - 15vmax * .5);
+  top: calc(50% - 15vmax * .5);
+  width: 15vmax;
+  -webkit-animation: orbit 4.1s infinite linear -8s;
+          animation: orbit 4.1s infinite linear -8s;
+}
+
+.planet:nth-of-type(3) {
+  height: 20vmax;
+  left: calc(50% - 20vmax * .5);
+  top: calc(50% - 20vmax * .5);
+  width: 20vmax;
+  -webkit-animation: orbit 5.6s infinite linear -7s;
+          animation: orbit 5.6s infinite linear -7s;
+}
+
+.planet:nth-of-type(4) {
+  height: 25vmax;
+  left: calc(50% - 25vmax * .5);
+  top: calc(50% - 25vmax * .5);
+  width: 25vmax;
+  -webkit-animation: orbit 7.1s infinite linear -6s;
+          animation: orbit 7.1s infinite linear -6s;
+}
+
+.planet:nth-of-type(5) {
+  height: 30vmax;
+  left: calc(50% - 30vmax * .5);
+  top: calc(50% - 30vmax * .5);
+  width: 30vmax;
+  -webkit-animation: orbit 8.6s infinite linear -5s;
+          animation: orbit 8.6s infinite linear -5s;
+}
+
+.planet:nth-of-type(6) {
+  height: 35vmax;
+  left: calc(50% - 35vmax * .5);
+  top: calc(50% - 35vmax * .5);
+  width: 35vmax;
+  -webkit-animation: orbit 10.1s infinite linear -4s;
+          animation: orbit 10.1s infinite linear -4s;
+}
+
+.planet:nth-of-type(7) {
+  height: 40vmax;
+  left: calc(50% - 40vmax * .5);
+  top: calc(50% - 40vmax * .5);
+  width: 40vmax;
+  -webkit-animation: orbit 11.6s infinite linear -3s;
+          animation: orbit 11.6s infinite linear -3s;
+}
+
+.planet:nth-of-type(8) {
+  height: 45vmax;
+  left: calc(50% - 45vmax * .5);
+  top: calc(50% - 45vmax * .5);
+  width: 45vmax;
+  -webkit-animation: orbit 13.1s infinite linear -2s;
+          animation: orbit 13.1s infinite linear -2s;
+}
+
+.planet:nth-of-type(1):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0.5vmax;
+  left: calc(0.5vmax * -.5);
+  position: absolute;
+  top: calc(50% - (0.5vmax * .5));
+  width: 0.5vmax;
+  background: #eedbc6;
+}
+
+.planet:nth-of-type(2):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1vmax;
+  left: calc(1vmax * -.5);
+  position: absolute;
+  top: calc(50% - (1vmax * .5));
+  width: 1vmax;
+  background: #ffba40;
+}
+
+.planet:nth-of-type(3):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1.5vmax;
+  left: calc(1.5vmax * -.5);
+  position: absolute;
+  top: calc(50% - (1.5vmax * .5));
+  width: 1.5vmax;
+  background: #32bcf0;
+}
+
+.planet:nth-of-type(4):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1vmax;
+  left: calc(1vmax * -.5);
+  position: absolute;
+  top: calc(50% - (1vmax * .5));
+  width: 1vmax;
+  background: #f95739;
+}
+
+.planet:nth-of-type(5):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 2.5vmax;
+  left: calc(2.5vmax * -.5);
+  position: absolute;
+  top: calc(50% - (2.5vmax * .5));
+  width: 2.5vmax;
+  background: #fc934b;
+}
+
+.planet:nth-of-type(6):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 2vmax;
+  left: calc(2vmax * -.5);
+  position: absolute;
+  top: calc(50% - (2vmax * .5));
+  width: 2vmax;
+  background: #ffefb2;
+}
+
+.planet:nth-of-type(7):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1.5vmax;
+  left: calc(1.5vmax * -.5);
+  position: absolute;
+  top: calc(50% - (1.5vmax * .5));
+  width: 1.5vmax;
+  background: #84cdc8;
+}
+
+.planet:nth-of-type(8):before {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1vmax;
+  left: calc(1vmax * -.5);
+  position: absolute;
+  top: calc(50% - (1vmax * .5));
+  width: 1vmax;
+  background: #7599eb;
+}
+
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
