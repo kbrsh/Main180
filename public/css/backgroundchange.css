@@ -1,0 +1,38 @@
+html, body { height: 100% }
+
+body {
+  margin: 0 auto;
+  background: grey;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1451417379553-15d8e8f49cde?crop=entropy&dpr=0.90&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1525");
+  background-size: cover;
+  background-position: center center;
+}
+
+input[type="file"] {
+  display: none
+}
+
+button {
+  width: 150px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid whitesmoke;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.6em;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: whitesmoke;
+  color: teal;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
