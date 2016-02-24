@@ -10,6 +10,13 @@ You can use this repo to see my code, and maybe even refactor it!
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+## Some Notes
+[![forthebadge](http://forthebadge.com/images/badges/oooo-kill-em.svg)](http://180io.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-swag.svg)](http://180io.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://180io.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://180io.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://180io.com)
+[![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://180io.com)
 </content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
