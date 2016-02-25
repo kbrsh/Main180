@@ -21,6 +21,7 @@ input[type="file"] {
 }
 
 button {
+  padding: 5vh;
   background: transparent;
   border: 2px solid whitesmoke;
   border-radius: 6px;
