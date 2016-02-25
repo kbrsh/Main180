@@ -19,14 +19,12 @@ button {
   align-items: center;
   justify-content: center;
   align-content: stretch;
-  width: 100%;
-  height: 100%;
   background: transparent;
   border: 2px solid whitesmoke;
   border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
   color: whitesmoke;
-  font-size: 1em;
+  font-size: 10vh;
   font-weight: 400;
   line-height: 2.6em;
   transition: all 0.2s;
