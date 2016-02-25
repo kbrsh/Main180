@@ -1,6 +1,13 @@
 html, body { height: 100% }
 
 body {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: stretch;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   background: grey;
   text-align: center;
@@ -14,11 +21,6 @@ input[type="file"] {
 }
 
 button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: stretch;
   background: transparent;
   border: 2px solid whitesmoke;
   border-radius: 6px;
