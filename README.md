@@ -10,6 +10,7 @@ You can use this repo to see my code, and maybe even refactor it!
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## Some Notes
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://180io.com)
