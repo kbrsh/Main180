@@ -1,6 +1,10 @@
 // Initialize Paper.js
 paper.install(window)          
 paper.setup('canvas-1')
+// A random color function needed later
+function randomColor() {
+		return '#' + Math.random().toString(16).slice(2, 8);
+	};
 // The amount of points in the path:
 var points = 25;
 
@@ -8,7 +12,7 @@ var points = 25;
 var length = 35;
 
 var path = new Path({
-	strokeColor: '#E4141B',
+	strokeColor: randomColor(),
 	strokeWidth: 20,
 	strokeCap: 'round'
 });
@@ -29,10 +33,6 @@ function onMouseMove(event) {
 	path.smooth({ type: 'continuous' });
 }
 
-function onMouseDown(event) {
-	path.fullySelected = true;
-	path.strokeColor = '#e08285';
-}
 
 function onMouseUp(event) {
 	path.fullySelected = false;
