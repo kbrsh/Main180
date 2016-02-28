@@ -1,3 +1,5 @@
+paper.install(window)          
+paper.setup('canvas')
 // The amount of points in the path:
 var points = 25;
 
