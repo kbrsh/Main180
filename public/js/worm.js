@@ -32,9 +32,3 @@ function onMouseMove(event) {
 	}
 	path.smooth({ type: 'continuous' });
 }
-
-
-function onMouseUp(event) {
-	path.fullySelected = false;
-	path.strokeColor = '#e4141b';
-}
