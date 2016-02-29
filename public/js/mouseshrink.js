@@ -1,3 +1,6 @@
+/* ===============
+   Basic Declarations
+=============== */
 // Declare some variables
 var loopId, canvas, ctx, amountX, amountY, mousePos;
 
@@ -13,6 +16,9 @@ $(document).ready(function() {
 	init();
 });
 
+/* ===============
+   Main Code
+=============== */
 function init(){
     //Get canvas & context
 	canvas = document.getElementById("myCanvas");
@@ -123,3 +129,8 @@ function randomColor() {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+/* ====================
+   Console Extras ;)
+==================== */
+console.log('The size of the circles is ' + circleSize);
+console.log('The color of the circles are ' + color);
