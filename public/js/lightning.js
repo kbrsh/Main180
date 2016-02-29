@@ -45,7 +45,7 @@ var draw = function() {
   $.fillStyle = 'hsla(264, 95%, 25%, .9)';
   $.measureText(t1);
   $.fillText(t1, w / 2 - 450, h / 2);
-  var t2 = "Lightning Strikes".split("").join(String.fromCharCode(0x2004));
+  var t2 = "LIGHTNING".split("").join(String.fromCharCode(0x2004));
   $.fillStyle = 'hsla(195, 95%, 95%, 1)';
   $.font = "5em Poiret One";
   $.measureText(t2);
