@@ -40,7 +40,7 @@ var draw = function() {
 
   $.globalCompositeOperation = 'source-over';
   $.fillRect(0, 0, w, h);
-  var t1 = "Lightning Strikes".split("").join(String.fromCharCode(0x2004));
+  var t1 = "LIGHTNING".split("").join(String.fromCharCode(0x2004));
   $.font = "5em Poiret One";
   $.fillStyle = 'hsla(264, 95%, 25%, .9)';
   $.measureText(t1);
