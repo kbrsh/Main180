@@ -1,4 +1,4 @@
-			var container, stats;
+			var container;
 
 			var camera, scene, renderer;
 
@@ -119,10 +119,6 @@
 				renderer.gammaInput = true;
 				renderer.gammaOutput = true;
 
-				// stats
-
-				stats = new Stats();
-				container.appendChild( stats.domElement );
 
 				// events
 
@@ -174,7 +170,6 @@
 				requestAnimationFrame( animate );
 
 				render();
-				stats.update();
 
 			}
 
