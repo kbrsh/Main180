@@ -1,7 +1,37 @@
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 body {
   background: #000;
   overflow:hidden;
   text-align:center;
   font-family:'Raleway', 'Century Gothic', serrif;
+}
+
+body * {
+    z-index: 20;
+    color: #000;
+}
+.text-container {
+    position: relative;
+  width: 80%;
+    top: 50px;
+  float: right;
+}
+
+
+p {
+    position: relative;
+}
+
+
+#light {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    z-index: 10;
+    -webkit-box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+
 }
