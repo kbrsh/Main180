@@ -70,9 +70,9 @@
 				// lens flares
 				var textureLoader = new THREE.TextureLoader();
 
-				var textureFlare0 = textureLoader.load( "textures/lensflare/lensflare0.png" );
-				var textureFlare2 = textureLoader.load( "textures/lensflare/lensflare2.png" );
-				var textureFlare3 = textureLoader.load( "textures/lensflare/lensflare3.png" );
+				var textureFlare0 = textureLoader.load( "http://threejs.org/examples/textures/lensflare/lensflare0.png" );
+				var textureFlare2 = textureLoader.load( "http://threejs.org/examples/textures/lensflare/lensflare2.png" );
+				var textureFlare3 = textureLoader.load( "http://threejs.org/examples/textures/lensflare/lensflare3.png" );
 
 				addLight( 0.55, 0.9, 0.5, 5000, 0, -1000 );
 				addLight( 0.08, 0.8, 0.5,    0, 0, -1000 );
