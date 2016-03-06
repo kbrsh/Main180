@@ -1,0 +1,37 @@
+body{
+  overflow: hidden;
+  margin: 0;
+  background-color: #1D1F20;
+}
+
+.grid{
+  position: absolute;
+  margin:auto;
+  top:0; bottom:0; left:0; right:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 1680px;
+  height: 100%;
+}
+
+.cell{
+  width: 30px;
+  height: 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  transition: background 3s linear, box-shadow 3s linear;
+  -webkit-transition: background 3s linear, -webkit-box-shadow 3s linear;
+}
+.cell:hover{
+  z-index: 99;
+  background: #0bff01;
+  box-shadow: 0 0 10px 2px #0bff01;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+}
+
