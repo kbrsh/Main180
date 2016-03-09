@@ -1,0 +1,32 @@
+body {
+  background-color: #000;
+  margin: 0;
+  overflow: hidden;
+}
+
+#console {
+  color: #fff;
+}
+
+#instruction {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  top: 50%;
+  margin-top: 180px;
+  text-align: center;
+  color: #88244D;
+  font-family: Helvetica, Arial, Sand-serif;
+  font-size: 0.8em;
+}
+
+#theCanvas {
+  position: absolute;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
