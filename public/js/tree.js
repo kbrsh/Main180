@@ -13,7 +13,7 @@ var console = function() {
 
 var viewWidth = 500,
     viewHeight = 300,
-    theCanvas = document.getElementById("theCanvas"),
+    theCanvas = document.getElementById("canv"),
     hue1=0,
 		hue2=180,
     branches = [],
