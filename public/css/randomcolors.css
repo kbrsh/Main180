@@ -1,0 +1,115 @@
+html, body, h1 {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+  font-family: "Open Sans", sans-serif;
+  background-color: #ff002b;
+  overflow: hidden;
+  font-size: 12px;
+}
+@media (min-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.word {
+  font-family: "Bangers", cursive;
+  font-size: 10vh;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: -1rem;
+  -webkit-animation: pop-out 2s ease-in-out infinite;
+          animation: pop-out 2s ease-in-out infinite;
+}
+
+.word {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.05em;
+  color: white;
+  padding: 0.5em;
+  font-size: 28px;
+}
+@media (min-width: 480px) {
+  .word {
+    font-size: 36px;
+  }
+}
+@media (min-width: 640px) {
+  .word {
+    font-size: 48px;
+  }
+}
+@media (min-width: 960px) {
+  .word {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1280px) {
+  .word {
+    font-size: 84px;
+  }
+}
+
+p {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #222222;
+}
+
+@-webkit-keyframes pop-out {
+  0% {
+    -webkit-transform: scale3d(0, 0, 1);
+            transform: scale3d(0, 0, 1);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1);
+            transform: scale3d(1.5, 1.5, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pop-out {
+  0% {
+    -webkit-transform: scale3d(0, 0, 1);
+            transform: scale3d(0, 0, 1);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1);
+            transform: scale3d(1.5, 1.5, 1);
+    opacity: 0;
+  }
+}
+a, a:visited {
+  color: inherit;
+}
