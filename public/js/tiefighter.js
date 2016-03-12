@@ -22,4 +22,6 @@ function randomFighter() {
 }
 
 randomFighter();
+document.addEventListener("click", randomFighter)
+document.addEventListener("touch", randomFighter)
 setInterval(randomFighter, 300);
