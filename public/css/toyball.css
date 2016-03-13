@@ -1,0 +1,25 @@
+body {
+  background: #111;
+  overflow: hidden;
+}
+
+div {
+  background: tomato;
+  border-radius: 50%;
+  height: 100px;
+  transition: background 300ms;
+  width: 100px;
+}
+
+div:hover {
+  background: #fff;
+  cursor: move;
+  cursor: -webkit-grab;
+}
+
+div:active {
+  background: limegreen;
+  cursor: move;
+  cursor: -webkit-grabbing;
+  transition-duration: 100ms;
+}
