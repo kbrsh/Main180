@@ -1,0 +1,22 @@
+body {
+  background-color: #000;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
