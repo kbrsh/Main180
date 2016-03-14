@@ -3,7 +3,7 @@ var point;
 var width = window.innerWidth;
 var height = window.innerHeight;
 
-var canvas = document.getElementById('c');
+var canvas = document.getElementById('canv');
 canvas.width = width;
 canvas.height = height;
 var ctx = canvas.getContext('2d');
