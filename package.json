@@ -1,0 +1,21 @@
+{
+  "name": "main180",
+  "version": "0.0.0",
+  "description": "180 Websites in 180 Days",
+  "main": "server.js",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingPixil/Main180.git"
+  },
+  "keywords": [
+    "180",
+    "project"
+  ],
+  "author": "Kabir Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KingPixil/Main180/issues"
+  },
+  "homepage": "https://github.com/KingPixil/Main180#readme"
+}

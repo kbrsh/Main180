@@ -1,2 +1,0 @@
-module WhatsMyIp::PageHelper
-end
