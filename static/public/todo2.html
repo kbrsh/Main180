@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Day One Hundred Thirty Eight | ToDo 2.0">
+  <meta name="author" content="Kabir Shah">
+
+  <title>ToDo 2.0</title>
+  <link rel="stylesheet" type="text/css" href="/public/css/todo2.css" />
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyNine/favicon.png" />
+  <script src="/public/js/analytics.js"></script>
+
+</head>
+
+<body>
+  <h1>
+TODO LIST
+</h1>
+  <div id="app">
+    <span class="input cool-input">
+					<input class="field cool-field" type="text" id="input-13" m-model="newTodo" m-on:keyup.enter="addTodo"/>
+					<label class="label cool-label" for="input-13">
+						<span class="label-content cool-label-content" data-content="Name">Name</span>
+    </label>
+    </span>
+    <ul>
+      <li m-for="todo in todos">
+        <span>{{ todo.text }}</span>
+        <button m-on:click="removeTodo($index)" id="x">X</button>
+      </li>
+    </ul>
+  </div>
+  <script src="/public/js/lib/moon.min.js"></script>
+  <script src="/public/js/todo2.js"></script>
+</body>
+
+</html>
