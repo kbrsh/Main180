@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Day One Hundred Fourty One | Pomorodo | Stay More Productive">
+  <meta name="author" content="Kabir Shah">
+
+  <title>Pomorodo</title>
+  <link rel="stylesheet" type="text/css" href="/public/css/pomorodo.css" />
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyNine/favicon.png" />
+  <script src="/public/js/analytics.js"></script>
+
+</head>
+
+<body>
+  
+<div :style="backColor" class="container">
+  <h1><span m-if="time &lt; 3600 &amp;&amp; !enable" @click="plusMin">+</span><span m-else="m-else" class="disable">+</span><span @click="touchButton">{{ calcMin }} : {{ calcSec }}</span><span m-if="time &gt; 60 &amp;&amp; !enable" @click="minusMin">- </span><span m-else="v-else" class="disable">-</span></h1>
+</div>
+  <script src="/public/js/lib/moon.min.js"></script>
+  <script src="/public/js/pomorodo.js"></script>
+</body>
+
+</html>
