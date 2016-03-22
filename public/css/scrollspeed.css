@@ -24,7 +24,6 @@ div#speed {
   font-family:'Quicksand';
   font-weight:bold;
   font-size:10vh;
-  color:#3f3f3f;
   position:fixed;
   height:50px;
   width:100%;
@@ -37,7 +36,6 @@ div#max{
   font-family:'Quicksand';
   font-weight:bold;
   font-size:0.938em;
-  color:#3f3f3f;
   position:fixed;
   height:50px;
   width:100%;
@@ -49,7 +47,6 @@ p {
   font-family:'Quicksand';
   font-weight:bold;
   font-size:0.719em;
-  color:#3f3f3f;
   position:fixed;
   height:50px;
   width:100%;
