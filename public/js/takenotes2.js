@@ -1,6 +1,3 @@
-var myNote = document.getElementById("myNote")
-var note = myNote.value
-
 var d = document;
 
 // not using this at the moment but might do later for graceful degradation...
