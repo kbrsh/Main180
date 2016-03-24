@@ -1,0 +1,39 @@
+textarea::selection {
+  background: #ffb7b7;
+}
+
+textarea::-moz-selection {
+  background: #ffb7b7;
+}
+
+.paper {
+  position: relative;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, white 5%) 0 0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, white 5%) 0 0;
+  background: linear-gradient(top, #f0f0f0 0%, white 5%) 0 0;
+  -webkit-background-size: 100% 30px;
+  -moz-background-size: 100% 30px;
+  -ms-background-size: 100% 30px;
+  background-size: 100% 30px;
+}
+
+.paper:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  top: 0;
+  left: 39px;
+  bottom: 0;
+  border-left: 1px solid #F9D3D3;
+}
+
+.paper textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 100vh;
+  padding: 30px 0 0 55px;
+  line-height: 30px;
+  min-height: 410px;
+  width: 100%;
+}
