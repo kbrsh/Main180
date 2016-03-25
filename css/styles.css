@@ -1,9 +1,9 @@
 /*  HIGHLIGHT COLOR */
-html::selection {
-  background: #e74c3c;
+*::selection {
+  background: #1abc9c;
 }
-html::-moz-selection {
-  background: #e74c3c;
+*::-moz-selection {
+  background: #1abc9c;
 }
 
 
