@@ -157,7 +157,7 @@ var keys = [];
         if ( keys.toString().indexOf( konami ) >=0 ){
 
             keys = [];
-
+		alert('Try Editing the Text ;)')
            document.getElementsByTagName("HTML")[0].setAttribute("contenteditable", "true");
         }
     });
