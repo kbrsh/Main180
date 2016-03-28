@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +6,14 @@
 }
 canvas {
   display: block;
+}
+h1 {
+  text-align: center;
+  font-family: 'Quicksand';
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 2s ease;
 }
