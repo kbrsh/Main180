@@ -84,7 +84,7 @@
       particles.push(new particle());
     }
   })
-  
+
   canvas.addEventListener('mousedown', function() {
     for (var i = 0; i < click_particle_count; i++) {
       particles.push(new particle());
@@ -95,3 +95,7 @@
       particles.push(new particle());
     }
   })
+
+  setTimeout(function() {
+    document.getElementById("inst").style.display = "none"
+  }, 3000)
