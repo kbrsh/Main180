@@ -16,6 +16,7 @@
   //Lets create some particles now
   var particle_count = 100;
   var move_particle_count = 5
+  var click_particle_count = 300
   for (var i = 0; i < particle_count; i++) {
     particles.push(new particle());
   }
@@ -80,6 +81,17 @@
   })
   canvas.addEventListener('touchmove', function() {
     for (var i = 0; i < move_particle_count; i++) {
+      particles.push(new particle());
+    }
+  })
+  
+  canvas.addEventListener('mousedown', function() {
+    for (var i = 0; i < click_particle_count; i++) {
+      particles.push(new particle());
+    }
+  })
+  canvas.addEventListener('touch', function() {
+    for (var i = 0; i < click_particle_count; i++) {
       particles.push(new particle());
     }
   })
