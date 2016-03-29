@@ -2,7 +2,7 @@ var canvas = document.getElementById("canv");
 var ctx = canvas.getContext("2d");
 var w = canvas.width = window.innerWidth;
 var h = canvas.height = window.innerHeight;
-var clearColor = 'rgba(0, 0, 0, .1)';
+var clear = 'rgba(0, 0, 0, .1)';
 var maxNum = 34;
 var dropsA = [];
 
@@ -95,7 +95,7 @@ function setup(){
 
 
 function anim() {
-	ctx.fillStyle = clearColor;
+	ctx.fillStyle = clear;
 	ctx.fillRect(0,0,w,h);
 	for(var i in dropsA){
 		dropsA[i].draw();
