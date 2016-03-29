@@ -3,11 +3,11 @@ var ctx = canvas.getContext("2d");
 var w = canvas.width = window.innerWidth;
 var h = canvas.height = window.innerHeight;
 var clearColor = 'rgba(0, 0, 0, .1)';
-var max = 30;
-var drops = [];
+var maxNum = 34;
+var dropsA = [];
 
-function random(min, max) {
-    return Math.random() * (max - min) + min;
+function random(min, maxNum) {
+    return Math.random() * (maxNum - min) + min;
 }
 
 function Rain() {}
@@ -82,12 +82,12 @@ function resize(){
 }
 
 function setup(){
-	for(var i = 0; i < max; i++){
+	for(var i = 0; i < maxNum; i++){
 		(function(j){
 			setTimeout(function(){
 				var r = new Rain();
 				r.init();
-				drops.push(r);
+				dropsA.push(r);
 			}, j * 200)
 		}(i));
 	}
@@ -97,8 +97,8 @@ function setup(){
 function anim() {
 	ctx.fillStyle = clearColor;
 	ctx.fillRect(0,0,w,h);
-	for(var i in drops){
-		drops[i].draw();
+	for(var i in dropsA){
+		dropsA[i].draw();
 	}
 	requestAnimationFrame(anim);
 }
@@ -106,12 +106,12 @@ function anim() {
 
 window.addEventListener("resize", resize);
 window.addEventListener("click", function() {
-	for(var i = 0; i < max; i++){
+	for(var i = 0; i < maxNum; i++){
 		(function(j){
 			setTimeout(function(){
 				var r = new Rain();
 				r.init();
-				drops.push(r);
+				dropsA.push(r);
 			}, j * 7)
 		}(i));
 	}
