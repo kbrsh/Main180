@@ -1,19 +1,15 @@
-function randomColor(){
-    var r = (Math.round(Math.random()* 127) + 127).toString(16);
-    var g = (Math.round(Math.random()* 127) + 127).toString(16);
-    var b = (Math.round(Math.random()* 127) + 127).toString(16);
-    return '#' + r + g + b;
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Quicksand';
+  text-align: center;
+  font-size: 20vh;
 }
-var output = document.querySelector('.color-output');
-var all = document.querySelector('html');
-var yarn = new Yarn();
-yarn.tween({
-  from: { color: randomColor() },
-  to:   { color: randomColor() },
-  duration: 10000,
-  easing: 'easeOutQuart',
-  step: function (state) {
-    output.innerHTML = state.color;
-    all.style.background = state.color;
-  }
-});
+
+p {
+  top: 5%;
+  font-family: 'Quicksand';
+}
