@@ -1,4 +1,4 @@
-var c = document.getElementById("c");
+var c = document.getElementById("canv");
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
