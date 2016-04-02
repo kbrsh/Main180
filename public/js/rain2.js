@@ -1,121 +1,90 @@
-var canvas = document.getElementById("canv");
-var ctx = canvas.getContext("2d");
-var w = canvas.width = window.innerWidth;
-var h = canvas.height = window.innerHeight;
-var clear = 'rgba(0, 0, 0, .1)';
-var maxNum = 34;
-var dropsA = [];
+window.onload = function() {
+  var canvas = document.getElementById("canv");
+  var ctx = canvas.getContext("2d");
+  // Random Color Function
+  function randomColor() {
+    return '#' + Math.random().toString(16).slice(2, 8);
+  }
 
-function random(min, maxNum) {
-    return Math.random() * (maxNum - min) + min;
-}
+  function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  //Make the canvas occupy the full page
+  var W = window.innerWidth,
+    H = window.innerHeight;
+  canvas.width = W;
+  canvas.height = H;
+  var particles = [];
+  //create some rain
+  var particle_count = 1;
+  var click_count = 37;
 
-function Rain() {}
+  function spawn() {
+    for (var i = 0; i < particle_count; i++) {
+      particles.push(new particle());
+    }
+  }
 
-Rain.prototype = {
-	init: function() {
-		this.x = random(0, w);
-		this.y = 0;
-		this.color = '#' + Math.random().toString(16).slice(2, 8);
-		this.w = 2;
-		this.h = 1;
-		this.vy = random(4, 5);
-		this.vw = 3;
-		this.vh = 1;
-		this.size = 2;
-		this.hit = random(h * .8, h * .9);
-		this.a = 1;
-		this.va = .96;
-	},
-	draw: function() {
-		if (this.y > this.hit) {
-			ctx.beginPath();
-			ctx.moveTo(this.x, this.y - this.h / 2);
-			ctx.moveTo(this.x, this.y - this.h / 2);
+  function click_gen() {
+    for (var i = 0; i < click_count; i++) {
+      particles.push(new particle());
+    }
+  }
+  canvas.addEventListener('mousedown', click_gen);
+  canvas.addEventListener('touch', click_gen);
 
-			ctx.bezierCurveTo(
-				this.x + this.w / 2, this.y - this.h / 2,
-				this.x + this.w / 2, this.y + this.h / 2,
-				this.x, this.y + this.h / 2);
+  function particle() {
+    // Making a random Width will add depth
+    this.size = {
+      w: randomInt(0.3, 0.5),
+      h: randomInt(5, 15)
+    }
+    this.speed = {
+      y: -2.5 + Math.random() * 5
+    };
+    this.location = {
+      x: randomInt(0, W),
+      y: -100
+    }
 
-			ctx.bezierCurveTo(
-				this.x - this.w / 2, this.y + this.h / 2,
-				this.x - this.w / 2, this.y - this.h / 2,
-				this.x, this.y - this.h / 2);
+    // Make gravity for the rain
+    this.gravity = 0.01 + Math.random() * 0.1
 
-			ctx.strokeStyle = this.color;
-			ctx.stroke();
-			ctx.closePath();
-			
-		} else {
-			ctx.fillStyle = this.color;
-			ctx.fillRect(this.x, this.y, this.size, this.size * 5);
-		}
-		this.update();
-	},
-	update: function() {
-		if(this.y < this.hit){
-			this.y += this.vy;
-		} else {
-			if(this.a > .03){
-				this.w += this.vw;
-				this.h += this.vh;
-				if(this.w > 100){
-					this.a *= this.va;
-					this.vw *= .98;
-					this.vh *= .98;
-				}
-			} else {
-				this.init();
-			}
-		}
-		
-	}
-}
+    this.color = randomColor()
 
+  }
 
+  function draw() {
+    ctx.globalCompositeOperation = "source-over";
+    // Painting the canvas so that the rain
+    // Leaves a trail
+    ctx.fillStyle = "rgba(0, 0, 0, .1)";
+    ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = "lighter";
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
 
-function resize(){
-	w = canvas.width = window.innerWidth;
-	h = canvas.height = window.innerHeight;
+      // Make it stay and kind of bounce
+      // When it hits bottom
+      if (p.location.y > H - p.size.h) {
+        p.speed.x *= .2
+        p.speed.y *= .2
 
-}
-
-function setup(){
-	for(var i = 0; i < maxNum; i++){
-		(function(j){
-			setTimeout(function(){
-				var r = new Rain();
-				r.init();
-				dropsA.push(r);
-			}, j * 200)
-		}(i));
-	}
-}
-
-
-function anim() {
-	ctx.fillStyle = clear;
-	ctx.fillRect(0,0,w,h);
-	for(var i in dropsA){
-		dropsA[i].draw();
-	}
-	requestAnimationFrame(anim);
-}
-
-
-window.addEventListener("resize", resize);
-window.addEventListener("click", function() {
-	for(var i = 0; i < maxNum; i++){
-		(function(j){
-			setTimeout(function(){
-				var r = new Rain();
-				r.init();
-				dropsA.push(r);
-			}, j * 7)
-		}(i));
-	}
-});
-
-setup();
-anim();
+        p.location.y = H - p.size.h;
+        p.speed.y *= -1;
+      } else {
+        ctx.beginPath();
+        ctx.fillStyle = p.color;
+        ctx.rect(p.location.x, p.location.y, p.size.w, p.size.h, false);
+        ctx.fill();
+        ctx.closePath();
+      }
+      // Apply gravity
+      p.speed.y += p.gravity
+        // move the rain
+      p.location.y += p.speed.y;
+    }
+  }
+  setInterval(spawn, 100)
+  setInterval(draw, 10);
+};
