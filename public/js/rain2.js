@@ -3,7 +3,7 @@ window.onload = function() {
   var ctx = canvas.getContext("2d");
   // Random Color Function
   function randomColor() {
-    return '#' + Math.random().toString(16).slice(2, 8);
+    return Math.round(Math.random() * 255).toString();
   }
 
   function randomInt(min, max) {
@@ -40,7 +40,7 @@ window.onload = function() {
       h: randomInt(5, 15)
     }
     this.speed = {
-      y: -2.5 + Math.random() * 5
+      y: randomInt(1, 2)
     };
     this.location = {
       x: randomInt(0, W),
@@ -49,8 +49,19 @@ window.onload = function() {
 
     // Make gravity for the rain
     this.gravity = 0.01 + Math.random() * 0.1
+      // Random RGBA
+    this.r = randomColor();
+    this.g = randomColor();
+    this.b = randomColor();
+    // Opacity values for curve
+    this.o = 1;
+    this.color = 'rgba(' + this.r + ',' + this.g + ',' + this.b + ',' + this.o + ')'
 
-    this.color = randomColor()
+    // Curve Size
+    this.drop = {
+      w: 2,
+      h: 1
+    }
 
   }
 
@@ -63,15 +74,25 @@ window.onload = function() {
     ctx.globalCompositeOperation = "lighter";
     for (var i = 0; i < particles.length; i++) {
       var p = particles[i];
-
-      // Make it stay and kind of bounce
+      // Make it stay
       // When it hits bottom
       if (p.location.y > H - p.size.h) {
         p.speed.x *= .2
         p.speed.y *= .2
 
         p.location.y = H - p.size.h;
-        p.speed.y *= -1;
+        // Comment out line below to add 
+        // Bounce Effect
+        //p.speed.y *= -1;
+
+        ctx.beginPath();
+        ctx.ellipse(p.location.x, p.location.y, p.drop.w, p.drop.h, 0, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(' + p.r + ',' + p.g + ',' + p.b + ',' + p.o + ')';
+        ctx.stroke();
+        p.drop.w += .8
+        p.drop.h += .2
+        p.o -= 0.01
+
       } else {
         ctx.beginPath();
         ctx.fillStyle = p.color;
