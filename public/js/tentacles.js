@@ -61,8 +61,8 @@ var generate = function() {
     for (var i = 0; i < particles.length; i++) {
       var p = particles[i];
 
-      p.velocity.x += (Math.random() - 0.5) / 2
-      p.velocity.y += (Math.random() - 0.5) / 2
+      /*p.velocity.x += (Math.random() - 0.5) / 2
+      p.velocity.y += (Math.random() - 0.5) / 2*/
      
       
       p.radius += 0.01
