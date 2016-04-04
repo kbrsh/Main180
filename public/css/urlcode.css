@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', 'Century Gothic', sans-serrif;
+  color:white;
+}
+
+body {
+  position:fixed;
+  top:50%;
+  left:50%;
+  text-align: center;
+    /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1458324124043-7803d4fec380?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=df280ed170d2a9e25506f2d3db42f4f9');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  transform:translate(-50%, -50%);
+}
+h1 {
+  text-transform: uppercase;
+}
+
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  max-width: 350px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: 400;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+}
+
+.field:focus {
+  outline: none;
+}
+
+.label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #696969;
+  font-weight: bold;
+  font-size: 70.25%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+
+.icon {
+  font-size: 150%;
+}
+
+.cool-input {
+  padding-top: 1em;
+}
+
+.cool-field {
+  width: 100%;
+  padding: 0.8em 0.5em;
+  background: transparent;
+  border: 2px solid;
+  -webkit-transition: border-color 0.25s;
+  transition: border-color 0.25s;
+}
+
+.cool-label {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, 3em, 0);
+  transform: translate3d(0, 3em, 0);
+}
+
+.cool-label-content {
+  padding: 0 1em;
+  font-weight: 400;
+}
+
+.cool-label-content::after {
+  content: attr(data-content);
+  position: absolute;
+  top: -200%;
+  left: 0;
+  color: #da6484;
+  font-weight: 800;
+}
+
+.cool-field:focus,
+.filled .cool-field {
+  border-color: #da6484;
+}
+
+.cool-field:focus + .cool-label,
+.filled .cool-label {
+  -webkit-animation: anim-1 0.25s forwards;
+  animation: anim-1 0.25s forwards;
+}
+
+.cool-field:focus + .cool-label .cool-label-content,
+.filled .cool-label-content {
+  -webkit-animation: anim-2 0.25s forwards ease-in;
+  animation: anim-2 0.25s forwards ease-in;
+}
+
+@-webkit-keyframes anim-1 {
+  0%,
+  70% {
+    -webkit-transform: translate3d(0, 3em, 0);
+    transform: translate3d(0, 3em, 0);
+  }
+  71%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes anim-2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  70%,
+  71% {
+    -webkit-transform: translate3d(0, 125%, 0);
+    transform: translate3d(0, 125%, 0);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    color: transparent;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+  }
+}
+
+@keyframes anim-chisato-1 {
+  0%,
+  70% {
+    -webkit-transform: translate3d(0, 3em, 0);
+    transform: translate3d(0, 3em, 0);
+  }
+  71%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes anim-chisato-2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  70%,
+  71% {
+    -webkit-transform: translate3d(0, 125%, 0);
+    transform: translate3d(0, 125%, 0);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    color: transparent;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+  }
