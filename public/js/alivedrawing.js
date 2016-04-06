@@ -62,7 +62,7 @@ var draw = function() {
     ctx.stroke();
 
     if (alive) {
-      console.log("It's Alive!")
+      //console.log("It's Alive!")
 
       p.location.x += p.speed.x
       p.location.y += p.speed.y
