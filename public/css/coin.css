@@ -20,6 +20,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  mix-blend-mode: mutiply; 
   width: 200px;
   height: 200px;
 }
