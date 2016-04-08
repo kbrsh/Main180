@@ -25,5 +25,5 @@ $(document).ready(function() {
         }
     }
 
-    $(".flip").click(flipACoin);
+    $(".flipCoin").click(flipACoin);
 });
