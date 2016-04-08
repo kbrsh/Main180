@@ -5,6 +5,13 @@ body {
   top: 50%;
   left: 50%;
   font-family: 'Varela Round';
+  text-align:center;
+  background-image: url('https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=d6b6d808ee5a504fade08a76d6d4d15d');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000;
   transform: translate(-50%, -50%);
 }
 
