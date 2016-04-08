@@ -13,3 +13,14 @@ img {
   width: 200px;
   height: 200px;
 }
+
+.flip {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.flip:hover,
+.flip:active {
+  color: #0e83cd;
+  background: #fff;
+}
