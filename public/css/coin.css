@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 body {
+  position: fixed;
   top: 50%;
   left: 50%;
   font-family: 'Varela Round';
