@@ -23,7 +23,7 @@ img {
   height: 200px;
 }
 
-.flip {
+.flipCoin {
   font-family: inherit;
   font-size: inherit;
   background: none;
@@ -42,7 +42,7 @@ img {
   color: #fff;
 }
 
-.flip:after {
+.flipCoin:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -50,8 +50,8 @@ img {
   transition: all 0.3s;
 }
 
-.flip:hover,
-.flip:active {
+.flipCoin:hover,
+.flipCoin:active {
   color: #0e83cd;
   background: #fff;
 }
