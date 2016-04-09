@@ -20,7 +20,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  mix-blend-mode: mutiply; 
+  mix-blend-mode: mutiply;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
 }
