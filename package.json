@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/KingPixil/Main180/issues"
   },
-  "homepage": "https://github.com/KingPixil/Main180#readme"
+  "homepage": "https://github.com/KingPixil/Main180#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
 }

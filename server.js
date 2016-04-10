@@ -9,4 +9,4 @@ app.use(function(req,res){
     res.sendfile(__dirname + '/static/404.html');
 });
 
-app.listen(process.env.PORT, process.env.IP)
+app.listen(3000)
