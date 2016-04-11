@@ -21,4 +21,4 @@ function randomBackground() {
 randomBackground();
 
 // Clipboard Config
-new Clipboard('.output');
+var clipboard = new Clipboard('.output');
