@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  color: white;
+  font-family: 'Varela Round';
+}
+
+#bg {
+  background: linear-gradient(45deg, #000, #000);
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#main {
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.output {
+  padding: 3vh 3vh;
+  border: 2px dotted white;
+}
+
+#gradient {
+  font-size: 8vh;
+}
+
+h1 {
+  font-size: 10vh;
+}
+
+p {
+  font-size: 7vh;
+}
