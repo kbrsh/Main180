@@ -24,7 +24,7 @@ window.onload = function() {
   for (var i = 0; i < incr; i++) {
     particles.push(new particle());
   }
-    incr+=700
+    incr+=10
   };
 
   function track_mouse(e) {
