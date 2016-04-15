@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand';
+}
+
+body {
+  background: black;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+
+#lose {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#score {
+  right: 5%;
+}
+
+#level {
+  left: 5%;
+}
