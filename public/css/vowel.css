@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+  
+body {
+  font-family: 'Quicksand', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  text-align: center;
+  transform: translateY(50%);
+                 /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1434064511983-18c6dae20ed5?ixlib=rb-0.3.5&q=80&fm=jpg&s=4fab730295da970a7d639733809c8052');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+     overflow:hidden;
+}
+
+h1 {
+  color: white;
+  font-size: 10vh;
+}
+
+input {
+  font-size: 7vh;
+  border: none;
+  text-align: center;
+  color: #6D6875;
+  font-family: 'Quicksand', sans-serif;
+  width: auto;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
