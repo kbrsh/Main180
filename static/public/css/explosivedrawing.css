@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+button {
+  top: 50%;
+  left: 1%;
+  position: absolute;
+  z-index: 10;
+  padding: 10px 40px;
+  border: none;
+  background: coral;
+  color: white;
+  font-family: 'Quicksand';
+}
+
+.btn {
+  border: none;
+  font-family: 'Quicksand';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+/* Button Outline */
+
+.btn-outline {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  color: #0e83cd;
+  background: #fff;
+}

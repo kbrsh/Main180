@@ -1,0 +1,17 @@
+		* {
+		  margin: 0;
+		  overflow: hidden
+		}
+		
+		#info {
+		  text-align: center;
+		  font-family: 'Century Gothic';
+		  position: absolute;
+		  color: #fff;
+		  transition: all 1s ease;
+		}
+		
+		/* Just a random Easter Egg I guess, after all, its almost Easter ;) */
+		#info:hover {
+		  opacity: 0;
+		}

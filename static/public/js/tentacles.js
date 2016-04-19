@@ -1,56 +1,83 @@
-function randomColor() {
-		return '#' + Math.random().toString(16).slice(2, 8);
-	};
-// inspired by http://wonderfl.net/c/e27i
-! function() {
-	"use strict";
-	function Circle (x, y) {
-		this.px = x;
-		this.py = y;
-		this.vx = 0;
-		this.vy = 0;
-	}
-	Circle.prototype.draw = function () {
-		this.vx += (Math.random() - 0.5) / 2;
-		this.vy += (Math.random() - 0.5) / 2;
-		this.px += this.vx;
-		this.py += this.vy;
-		var dx = this.px - canvas.width  * 0.5;
-		var dy = this.py - canvas.height * 0.5;
-		var d  = Math.sqrt(dx * dx + dy * dy);
-		var m = Math.min(canvas.width * 0.5, canvas.height * 0.5);
-		var radius = (-d / m + 1) * m / 10;
-		if (radius > 0) {
-			requestAnimationFrame(this.draw.bind(this));
-			ctx.beginPath();
-			ctx.arc(this.px, this.py, radius, 0, 2 * Math.PI);
-			ctx.fillStyle = randomColor();
-			ctx.fill();
-			ctx.strokeStyle = "#000";
-			ctx.stroke();
-		}
-	}
-	// set canvas
-	var canvas  = document.getElementById("canvas");
-	var ctx     = canvas.getContext("2d");
-	function resize () {
-		canvas.width = canvas.offsetWidth;
-		canvas.height = canvas.offsetHeight;
-	}
-	window.addEventListener('resize', resize, false);
-	canvas.onselectstart = function() { return false; }
-	canvas.ondragstart = function() { return false; }
-	resize();
-	// click event
-	function click () {
-		for (var i = 0; i < 10; i++) {
-			var c = new Circle(canvas.width * 0.5, canvas.height * 0.5);
-			c.draw();
-		}
-	}
-	window.addEventListener("mousedown",  click, false );
-	document.body.addEventListener("touchstart", click, false );
-	// double-click
-	click(); 
-	click();
-}();
+window.onload = function() {
+  var canvas = document.getElementById("canv");
+  var ctx = canvas.getContext("2d");
+    // Random Color Function
+  function randomColor() {
+    return '#' + Math.random().toString(16).slice(2, 8);
+  }
+  //Make the canvas occupy the full page
+  var W = window.innerWidth,
+    H = window.innerHeight;
+  canvas.width = W;
+  canvas.height = H;
+  var particles = [];
+  var mouse = {};
+
+  ctx.globalCompositeOperation = "source-over";
+  //Painting the canvas black
+  ctx.fillStyle = "black";
+  ctx.fillRect(0, 0, W, H);
+  ctx.globalCompositeOperation = "darker";
+
+  //Lets create some particles now
+  var particle_count = Math.floor(Math.random() * (50 - 25 + 1)) + 25;
+var generate = function() {
+  for (var i = 0; i < particle_count; i++) {
+    particles.push(new particle());
+  }
+}
+  canvas.addEventListener('mousedown', generate, false);
+  canvas.addEventListener('touch', generate, false);
+
+  function particle() {
+    this.velocity = {
+      x: -2.5 + Math.random() * 5,
+      y: -2.5 + Math.random() * 5
+    };
+    
+    this.accel = {
+      x: -3.5 + Math.random() * 7,
+      y: -3.5 + Math.random() * 7
+    };
+    
+    if (mouse.x && mouse.y) {
+      this.location = {
+        x: mouse.x,
+        y: mouse.y
+      };
+    } else {
+      this.location = {
+        x: W / 2,
+        y: H / 2
+      };
+    }
+    this.radius = 2 + Math.random() * 5;
+
+    this.color = randomColor()
+  }
+
+  function draw() {
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+
+      /*p.velocity.x += (Math.random() - 0.5) / 2
+      p.velocity.y += (Math.random() - 0.5) / 2*/
+     
+      
+      p.radius += 0.01
+      ctx.beginPath();
+      ctx.fillStyle = p.color;
+      ctx.arc(p.location.x, p.location.y, p.radius, Math.PI * 2, false);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      //lets move the particles
+      p.location.x += p.velocity.x;
+      p.location.y += p.velocity.y;
+    }
+  }
+  generate();
+  setInterval(draw, 33);
+};

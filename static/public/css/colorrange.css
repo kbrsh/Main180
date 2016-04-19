@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Quicksand';
+  text-align: center;
+  font-size: 20vh;
+}
+
+p {
+  top: 5%;
+  font-family: 'Quicksand';
+}

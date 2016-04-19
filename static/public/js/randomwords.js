@@ -5,8 +5,7 @@ $(document).ready(function() {
   
   // cache the jquery elements to prevent dom queries during the animation events
   var $body = $("body");
-  var $svg = $("svg");
-  var $word = $(".word");
+  var $word = $("h1");
 
   // when the animation iterates
   $("h1").on('webkitAnimationIteration oanimationiteration msAnimationIteration animationiteration ', function() {

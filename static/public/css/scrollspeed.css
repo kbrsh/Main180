@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+body {
+  color:white;
+  /* Location of the image */
+  background-image: url('https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+ height:16000px;
+}
+
+div#speed {
+  font-family:'Quicksand';
+  font-weight:bold;
+  font-size:10vh;
+  position:fixed;
+  height:50px;
+  width:100%;
+  top:50%;
+  text-align:center;
+  margin:-25px auto auto auto;
+}
+
+div#max{
+  font-family:'Quicksand';
+  font-weight:bold;
+  font-size:0.938em;
+  position:fixed;
+  height:50px;
+  width:100%;
+  bottom:5px;
+  text-align:center;
+  margin:0px;
+}
+p {
+  font-family:'Quicksand';
+  font-weight:bold;
+  font-size:0.719em;
+  position:fixed;
+  height:50px;
+  width:100%;
+  bottom:20vh;
+  text-align:center;
+  margin:0px;
+}
