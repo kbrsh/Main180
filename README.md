@@ -1,7 +1,14 @@
 <snippet>
   <content>
 # Project 180 Days
-Hi! I am Kabir and I am making 180 websites in 180 days to learn coding!
+Hi! I am Kabir and I am making 180 X in 180 days to learn coding! Replace X with Websites/UI/Backend
+
+### Progess
+
+* 180 Websites - In Progress
+* UI - Coming Soon
+* Backend - Coming Soon
+
 ## Usage
 You can use this repo to see my code, and maybe even refactor it!
 ## Contributing
