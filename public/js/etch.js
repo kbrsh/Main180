@@ -1,11 +1,3 @@
-var H = window.innerHeight
-var W = window.innerWidth
-
-var canvas = document.getElementById("canv")
-
-canvas.width = W
-canvas.height = H
-
 // The starting position of the line
 var position = new Point(100, 100);
 
