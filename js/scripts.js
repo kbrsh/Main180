@@ -1,4 +1,4 @@
-/***************** Waypoints *****************
+/***************** Waypoints ******************/
 
 $(document).ready(function() {
 
@@ -35,7 +35,6 @@ $(document).ready(function() {
 
 });
 
-*/
 
 /***************** Slide-In Nav ******************/
 
