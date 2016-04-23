@@ -11,6 +11,8 @@ input {
   left: 0;
   border: none;
   width: 100%;
+  background: transparent;
+  font-family: 'Quicksand';
   font-size: 10vh;
   outline: none;
   padding: 24px 22%;
