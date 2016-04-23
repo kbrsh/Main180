@@ -8,4 +8,4 @@ function gen() {
 }
 
 
-document.addEventListener("click", gen)
+document.getElementByClassName("btn").addEventListener("click", gen)
