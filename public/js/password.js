@@ -6,6 +6,6 @@ function gen() {
   var pass = chars[Math.floor(Math.random()*chars.length)] + chars[Math.floor(Math.random()*chars.length)] + chars[Math.floor(Math.random()*chars.length)] + chars[Math.floor(Math.random()*chars.length)] + chars[Math.floor(Math.random()*chars.length)] + chars[Math.floor(Math.random()*chars.length)] + chars[Math.floor(Math.random()*chars.length)]
   document.getElementById("pass").innerHTML = pass
 }
+var btn = document.getElementsByClassName("btn")
 
-
-document.getElementsByClassName("btn").addEventListener("click", gen)
+btn.addEventListener("click", gen)
