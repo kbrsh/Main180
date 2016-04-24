@@ -8,6 +8,7 @@ body {
   color: white;
 }
 input {
+  color: white;
   position: absolute;
   top: 40%;
   left: 0;
@@ -19,4 +20,11 @@ input {
   outline: none;
   padding: 24px 22%;
   transform: translateY(-50%);
+}
+
+h1 {
+  top: 40%;
+  text-align: center;
+  font-size: 15vh;
+  position: absolute;
 }
