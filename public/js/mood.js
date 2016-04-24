@@ -1,5 +1,6 @@
 var input = document.getElementById("input")
 var body = document.getElementById('body')
+var instr = document.getElementById('instr')
 
 function update() {
   var moodColor = 0, chars=input.value.split("");
@@ -14,3 +15,6 @@ function update() {
   body.style.background = color
 }
 input.addEventListener("keyup", update)
+setInterval(function() {
+  instr.style.display = 'none'
+}, 1000)
