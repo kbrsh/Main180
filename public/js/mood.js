@@ -16,5 +16,5 @@ function update() {
 }
 input.addEventListener("keyup", update)
 setInterval(function() {
-  instr.style.display = 'none'
-}, 1000)
+  instr.style.opacity-=0.1
+}, 100)
