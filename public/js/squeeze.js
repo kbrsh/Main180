@@ -5,6 +5,9 @@ var oldSize = view.size;
 var spotColor = new Color('blue');
 var mousePos = view.center;
 var selected = false;
+var canv = document.getElementById("canv");
+canv.height = window.innerHeight
+canv.width = window.innerWidth
 
 onResize();
 
