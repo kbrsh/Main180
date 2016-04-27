@@ -319,7 +319,7 @@ Letter.prototype.draw = function() {
 	ctx.save();
 	ctx.translate(xy.x, xy.y);
 	ctx.rotate(this.rotate);
-	ctx.font = this.size+"px Arial";
+	ctx.font = this.size+"px Quicksand";
 	ctx.fillStyle = this.color;
 	ctx.fillText(this.symbol, -15, -15);
 	ctx.restore();
