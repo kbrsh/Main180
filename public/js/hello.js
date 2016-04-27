@@ -459,8 +459,8 @@ $('input').on("keydown", function(event) {
 function randPos(num) {
   return Math.floor(Math.random() * num) + '%'
 }
-var unclick = document.querySelectorAll("button")
+
 $('button').on("mouseover", function() {
-  unclick.style.top = randPos(90)
-  unclick.style.left = randPos(90)
+  $('button').style.top = randPos(90)
+  $('button').style.left = randPos(90)
 });
