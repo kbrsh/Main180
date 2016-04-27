@@ -461,6 +461,6 @@ function randPos(num) {
 }
 
 $('button').on("mouseover", function() {
-  $('button').style.top = randPos(90)
-  $('button').style.left = randPos(90)
+  $(this).css('top', randPos(90))
+  $(this).css('left', randPos(90))
 });
