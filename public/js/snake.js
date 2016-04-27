@@ -4,8 +4,8 @@ $(document).ready(function(){
 	var ctx = canvas.getContext("2d");
 	canvas.width = window.innerWidth
 	canvas.weight = window.innerHeight
-	var w = $("#canvas").width();
-	var h = $("#canvas").height();
+	var w = $("#canv").width();
+	var h = $("#canv").height();
 	
 	//Lets save the cell width in a variable for easy control
 	var cw = 10;
