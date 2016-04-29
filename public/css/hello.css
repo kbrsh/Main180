@@ -49,3 +49,17 @@ canvas {
 #unclickable {
   position: absolute !important;
 }
+
+input {
+  font-size: 7vh;
+  border: none;
+  text-align: center;
+  color: #6D6875;
+  font-family: 'Quicksand', sans-serif;
+  width: auto;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
