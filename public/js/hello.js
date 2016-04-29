@@ -281,6 +281,8 @@ var pick=~~(Math.random()*359),
         Random Color
 ==============================*/
 
+// Take from http://codepen.io/mladen___/pen/JYqQpz, and modified a little :)
+
 
 function randomColor() {
   return '#' + Math.random().toString(16).slice(2, 8)
