@@ -162,6 +162,19 @@ var keys = [];
            document.getElementsByTagName("HTML")[0].setAttribute("contenteditable", "true");
         }
     });
+    
+    var musicKeys = [];
+    var musicStrKeys = '77,85,83,73,67';
+
+    $(document).keydown(function(e){
+        musicStrKeys.push( e.keyCode );
+        if ( keys.toString().indexOf( musicStrKeys ) >=0 ){
+
+            musicKeys = [];
+		alert('Listen To Some Music!')
+            $('body').addClass('background').append('<iframe width="0" height="0" src="https://www.youtube.com/embed/ahCMf3lp0go?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>')
+        }
+    });
    
    // For the random Selection Color
    var pick=~~(Math.random()*359),
