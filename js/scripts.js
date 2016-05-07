@@ -167,7 +167,7 @@ var keys = [];
     var musicStrKeys = '77,85,83,73,67';
 
     $(document).keydown(function(e){
-        musicStrKeys.push( e.keyCode );
+        musicKeys.push( e.keyCode );
         if ( keys.toString().indexOf( musicStrKeys ) >=0 ){
 
             musicKeys = [];
